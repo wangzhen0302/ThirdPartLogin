@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ThirdPartLogin'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'A short description of ThirdPartLogin.'
 
 # This description is used to generate tags and improve search results.
@@ -33,15 +33,15 @@ TODO: Add long description of the pod here.
 #  s.source_files = 'ThirdPartLogin/Classes/**/*'
   
   s.subspec 'FaceBook' do |n|
-      c.source_files = 'ThirdPartLogin/Classes/QQ/**/*'
+      c.source_files = 'ThirdPartLogin/Classes/FaceBook/**/*'
   end
   
   s.subspec 'Google' do |n|
-      c.source_files = 'ThirdPartLogin/Classes/QQ/**/*'
+      c.source_files = 'ThirdPartLogin/Classes/Google/**/*'
   end
   
   s.subspec 'Apple' do |n|
-      c.source_files = 'ThirdPartLogin/Classes/QQ/**/*'
+      c.source_files = 'ThirdPartLogin/Classes/Apple/**/*'
   end
   
   # s.resource_bundles = {
