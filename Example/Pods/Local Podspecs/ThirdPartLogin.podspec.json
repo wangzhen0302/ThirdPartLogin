@@ -1,7 +1,7 @@
 {
   "name": "ThirdPartLogin",
-  "version": "0.1.0",
-  "summary": "A short description of ThirdPartLogin.",
+  "version": "0.1.8",
+  "summary": "iOS developer tools",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/wangzhen0302/ThirdPartLogin",
   "license": {
@@ -13,10 +13,30 @@
   },
   "source": {
     "git": "https://github.com/wangzhen0302/ThirdPartLogin.git",
-    "tag": "0.1.0"
+    "tag": "0.1.8"
   },
   "platforms": {
-    "ios": "10.0"
+    "ios": "13.0"
   },
-  "source_files": "ThirdPartLogin/Classes/**/*"
+  "swift_versions": "5.0",
+  "resource_bundles": {
+    "ThirdPartLogin": [
+      "ThirdPartLogin/Assets/*.png"
+    ]
+  },
+  "subspecs": [
+    {
+      "name": "FaceBook",
+      "source_files": "ThirdPartLogin/Classes/FaceBook/**/*"
+    },
+    {
+      "name": "Google",
+      "source_files": "ThirdPartLogin/Classes/Google/**/*"
+    },
+    {
+      "name": "Apple",
+      "source_files": "ThirdPartLogin/Classes/Apple/**/*"
+    }
+  ],
+  "swift_version": "5.0"
 }
