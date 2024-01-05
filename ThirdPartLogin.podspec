@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ThirdPartLogin'
-  s.version          = '0.1.5'
+  s.version          = '0.1.6'
   s.summary          = 'iOS developer tools'
 
 # This description is used to generate tags and improve search results.
@@ -30,24 +30,23 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '13.0'
   s.swift_version = '5.0'
-  s.source_files = 'ThirdPartLogin/Classes/**/*'
+#  s.source_files = 'ThirdPartLogin/Classes/**/*'
   
-#  s.subspec 'FaceBook' do |FaceBook|
-#      c.source_files = 'ThirdPartLogin/Classes/FaceBook/**/*'
-#  end
-#  
-#    subspec
-#  s.subspec 'Google' do |Google|
-#      c.source_files = 'ThirdPartLogin/Classes/Google/**/*'
-#  end
-#  
-#  s.subspec 'Apple' do |Apple|
-#      c.source_files = 'ThirdPartLogin/Classes/Apple/**/*'
-#  end
+  s.subspec 'FaceBook' do |FaceBook|
+      c.source_files = 'ThirdPartLogin/Classes/FaceBook/**/*'
+  end
   
-  # s.resource_bundles = {
-  #   'ThirdPartLogin' => ['ThirdPartLogin/Assets/*.png']
-  # }
+  s.subspec 'Google' do |Google|
+      c.source_files = 'ThirdPartLogin/Classes/Google/**/*'
+  end
+  
+  s.subspec 'Apple' do |Apple|
+      c.source_files = 'ThirdPartLogin/Classes/Apple/**/*'
+  end
+  
+   s.resource_bundles = {
+     'ThirdPartLogin' => ['ThirdPartLogin/Assets/*.png']
+   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'

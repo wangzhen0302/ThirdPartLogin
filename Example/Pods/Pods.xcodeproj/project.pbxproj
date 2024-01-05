@@ -15,8 +15,10 @@
 		9C8ED70461C0EE0E0604AF090E97D30A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		ABE3829CAD0D7782ECD0C0DDF0C80BC1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		CC8A4367F6E73ADA5E49CD2FA4FA7495 /* Pods-ThirdPartLogin_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4814966EC194EE24BA54A7CC02289CFD /* Pods-ThirdPartLogin_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CEC1BFFC2B47B532004E7174 /* Apple.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC1BFFB2B47B532004E7174 /* Apple.swift */; };
+		CEC1BFFE2B47B539004E7174 /* Facebook.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC1BFFD2B47B539004E7174 /* Facebook.swift */; };
+		CEC1C0002B47B541004E7174 /* Google.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC1BFFF2B47B541004E7174 /* Google.swift */; };
 		E04EB1D9EA152B50B55EE3D7E481F676 /* ThirdPartLogin-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E92787748F27F3AE4C657EB3F107D94 /* ThirdPartLogin-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EAD99E4D24CB30763966E009C345FB34 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5F82F14BF0D06D9C35141ACAA27A68 /* ReplaceMe.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,13 +61,15 @@
 		83CBD46C86C50C0ABB476E585E35DAEB /* Pods-ThirdPartLogin_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ThirdPartLogin_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		89EE28FF39D0554D65C97F3BF1CA960E /* Pods-ThirdPartLogin_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ThirdPartLogin_Tests-Info.plist"; sourceTree = "<group>"; };
 		97DA1517951AFBC2CADFC1DD64D52CE2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		9A5F82F14BF0D06D9C35141ACAA27A68 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = ThirdPartLogin/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
-		9C7579AA38CF1B0351830F4BEEDCF6B5 /* ThirdPartLogin */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ThirdPartLogin; path = ThirdPartLogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C7579AA38CF1B0351830F4BEEDCF6B5 /* ThirdPartLogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ThirdPartLogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A933E0434BD6894045D43334078F0A52 /* Pods-ThirdPartLogin_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ThirdPartLogin_Tests-umbrella.h"; sourceTree = "<group>"; };
 		B061112FDCC19A93FE12D983F3680321 /* Pods-ThirdPartLogin_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ThirdPartLogin_Example.release.xcconfig"; sourceTree = "<group>"; };
 		BA45215BE91272B669DCD662601E32CC /* ThirdPartLogin-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ThirdPartLogin-Info.plist"; sourceTree = "<group>"; };
 		BF55169DB0240C06FDDFEA6C58F33CA2 /* Pods-ThirdPartLogin_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ThirdPartLogin_Example-dummy.m"; sourceTree = "<group>"; };
+		CEC1BFFB2B47B532004E7174 /* Apple.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Apple.swift; sourceTree = "<group>"; };
+		CEC1BFFD2B47B539004E7174 /* Facebook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Facebook.swift; sourceTree = "<group>"; };
+		CEC1BFFF2B47B541004E7174 /* Google.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Google.swift; sourceTree = "<group>"; };
 		E5F63E3E2A3FA7270B92912F12C8ABCD /* Pods-ThirdPartLogin_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ThirdPartLogin_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		EAE93C76E8FA466DD4255F3615126225 /* Pods-ThirdPartLogin_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-ThirdPartLogin_Example"; path = Pods_ThirdPartLogin_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC20C8592C04EC0B42883B885B35B51E /* Pods-ThirdPartLogin_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ThirdPartLogin_Tests.modulemap"; sourceTree = "<group>"; };
@@ -118,7 +122,9 @@
 		07F4A92894862D78BD25272DAC17CDDE /* ThirdPartLogin */ = {
 			isa = PBXGroup;
 			children = (
-				9A5F82F14BF0D06D9C35141ACAA27A68 /* ReplaceMe.swift */,
+				CEC1BFF42B47B4D0004E7174 /* Apple */,
+				CEC1BFF22B47B4D0004E7174 /* FaceBook */,
+				CEC1BFF62B47B4D0004E7174 /* Google */,
 				603DFB3A41F1BDAF650BD101DF06A1BE /* Pod */,
 				03604610D3C77518865900EEAEB25696 /* Support Files */,
 			);
@@ -177,6 +183,33 @@
 			path = "Target Support Files/Pods-ThirdPartLogin_Example";
 			sourceTree = "<group>";
 		};
+		CEC1BFF22B47B4D0004E7174 /* FaceBook */ = {
+			isa = PBXGroup;
+			children = (
+				CEC1BFFD2B47B539004E7174 /* Facebook.swift */,
+			);
+			name = FaceBook;
+			path = ThirdPartLogin/Classes/FaceBook;
+			sourceTree = "<group>";
+		};
+		CEC1BFF42B47B4D0004E7174 /* Apple */ = {
+			isa = PBXGroup;
+			children = (
+				CEC1BFFB2B47B532004E7174 /* Apple.swift */,
+			);
+			name = Apple;
+			path = ThirdPartLogin/Classes/Apple;
+			sourceTree = "<group>";
+		};
+		CEC1BFF62B47B4D0004E7174 /* Google */ = {
+			isa = PBXGroup;
+			children = (
+				CEC1BFFF2B47B541004E7174 /* Google.swift */,
+			);
+			name = Google;
+			path = ThirdPartLogin/Classes/Google;
+			sourceTree = "<group>";
+		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
@@ -218,7 +251,7 @@
 			children = (
 				EAE93C76E8FA466DD4255F3615126225 /* Pods-ThirdPartLogin_Example */,
 				4C6F8A2C1C4F134FEA737AA594B88AD2 /* Pods-ThirdPartLogin_Tests */,
-				9C7579AA38CF1B0351830F4BEEDCF6B5 /* ThirdPartLogin */,
+				9C7579AA38CF1B0351830F4BEEDCF6B5 /* ThirdPartLogin.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -268,7 +301,7 @@
 			);
 			name = ThirdPartLogin;
 			productName = ThirdPartLogin;
-			productReference = 9C7579AA38CF1B0351830F4BEEDCF6B5 /* ThirdPartLogin */;
+			productReference = 9C7579AA38CF1B0351830F4BEEDCF6B5 /* ThirdPartLogin.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		9E62624704189BE944A87D88AF0546F7 /* Pods-ThirdPartLogin_Example */ = {
@@ -317,6 +350,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					3CE06432368F36CC46FA5463068AA518 = {
+						LastSwiftMigration = 1500;
+					};
+				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -375,7 +413,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EAD99E4D24CB30763966E009C345FB34 /* ReplaceMe.swift in Sources */,
+				CEC1C0002B47B541004E7174 /* Google.swift in Sources */,
+				CEC1BFFC2B47B532004E7174 /* Apple.swift in Sources */,
+				CEC1BFFE2B47B539004E7174 /* Facebook.swift in Sources */,
 				91B9E4503C17032B31E795461B2C419C /* ThirdPartLogin-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -572,6 +612,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4E3AD663449A093044361BA4855ACB04 /* ThirdPartLogin.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -703,6 +744,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 419821FF36FF1A56C04947CDCD734900 /* ThirdPartLogin.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -723,6 +765,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
