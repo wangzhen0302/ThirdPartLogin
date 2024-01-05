@@ -15,6 +15,9 @@
 		9C8ED70461C0EE0E0604AF090E97D30A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		ABE3829CAD0D7782ECD0C0DDF0C80BC1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		CC8A4367F6E73ADA5E49CD2FA4FA7495 /* Pods-ThirdPartLogin_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4814966EC194EE24BA54A7CC02289CFD /* Pods-ThirdPartLogin_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CEC1BFEF2B47B136004E7174 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC1BFEA2B47B136004E7174 /* ReplaceMe.swift */; };
+		CEC1BFF02B47B136004E7174 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC1BFEC2B47B136004E7174 /* ReplaceMe.swift */; };
+		CEC1BFF12B47B136004E7174 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC1BFEE2B47B136004E7174 /* ReplaceMe.swift */; };
 		E04EB1D9EA152B50B55EE3D7E481F676 /* ThirdPartLogin-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E92787748F27F3AE4C657EB3F107D94 /* ThirdPartLogin-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EAD99E4D24CB30763966E009C345FB34 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5F82F14BF0D06D9C35141ACAA27A68 /* ReplaceMe.swift */; };
 /* End PBXBuildFile section */
@@ -66,6 +69,9 @@
 		B061112FDCC19A93FE12D983F3680321 /* Pods-ThirdPartLogin_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ThirdPartLogin_Example.release.xcconfig"; sourceTree = "<group>"; };
 		BA45215BE91272B669DCD662601E32CC /* ThirdPartLogin-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ThirdPartLogin-Info.plist"; sourceTree = "<group>"; };
 		BF55169DB0240C06FDDFEA6C58F33CA2 /* Pods-ThirdPartLogin_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ThirdPartLogin_Example-dummy.m"; sourceTree = "<group>"; };
+		CEC1BFEA2B47B136004E7174 /* ReplaceMe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReplaceMe.swift; sourceTree = "<group>"; };
+		CEC1BFEC2B47B136004E7174 /* ReplaceMe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReplaceMe.swift; sourceTree = "<group>"; };
+		CEC1BFEE2B47B136004E7174 /* ReplaceMe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReplaceMe.swift; sourceTree = "<group>"; };
 		E5F63E3E2A3FA7270B92912F12C8ABCD /* Pods-ThirdPartLogin_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ThirdPartLogin_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		EAE93C76E8FA466DD4255F3615126225 /* Pods-ThirdPartLogin_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-ThirdPartLogin_Example"; path = Pods_ThirdPartLogin_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC20C8592C04EC0B42883B885B35B51E /* Pods-ThirdPartLogin_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ThirdPartLogin_Tests.modulemap"; sourceTree = "<group>"; };
@@ -118,9 +124,9 @@
 		07F4A92894862D78BD25272DAC17CDDE /* ThirdPartLogin */ = {
 			isa = PBXGroup;
 			children = (
-				CEC1BFE32B47AD28004E7174 /* Apple */,
-				CEC1BFE42B47AD28004E7174 /* FaceBook */,
-				CEC1BFE52B47AD29004E7174 /* Google */,
+				CEC1BFEB2B47B136004E7174 /* Apple */,
+				CEC1BFE92B47B136004E7174 /* FaceBook */,
+				CEC1BFED2B47B136004E7174 /* Google */,
 				9A5F82F14BF0D06D9C35141ACAA27A68 /* ReplaceMe.swift */,
 				603DFB3A41F1BDAF650BD101DF06A1BE /* Pod */,
 				03604610D3C77518865900EEAEB25696 /* Support Files */,
@@ -180,25 +186,28 @@
 			path = "Target Support Files/Pods-ThirdPartLogin_Example";
 			sourceTree = "<group>";
 		};
-		CEC1BFE32B47AD28004E7174 /* Apple */ = {
+		CEC1BFE92B47B136004E7174 /* FaceBook */ = {
 			isa = PBXGroup;
 			children = (
-			);
-			name = Apple;
-			path = ThirdPartLogin/Classes/Apple;
-			sourceTree = "<group>";
-		};
-		CEC1BFE42B47AD28004E7174 /* FaceBook */ = {
-			isa = PBXGroup;
-			children = (
+				CEC1BFEA2B47B136004E7174 /* ReplaceMe.swift */,
 			);
 			name = FaceBook;
 			path = ThirdPartLogin/Classes/FaceBook;
 			sourceTree = "<group>";
 		};
-		CEC1BFE52B47AD29004E7174 /* Google */ = {
+		CEC1BFEB2B47B136004E7174 /* Apple */ = {
 			isa = PBXGroup;
 			children = (
+				CEC1BFEC2B47B136004E7174 /* ReplaceMe.swift */,
+			);
+			name = Apple;
+			path = ThirdPartLogin/Classes/Apple;
+			sourceTree = "<group>";
+		};
+		CEC1BFED2B47B136004E7174 /* Google */ = {
+			isa = PBXGroup;
+			children = (
+				CEC1BFEE2B47B136004E7174 /* ReplaceMe.swift */,
 			);
 			name = Google;
 			path = ThirdPartLogin/Classes/Google;
@@ -402,8 +411,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEC1BFF02B47B136004E7174 /* ReplaceMe.swift in Sources */,
+				CEC1BFEF2B47B136004E7174 /* ReplaceMe.swift in Sources */,
 				EAD99E4D24CB30763966E009C345FB34 /* ReplaceMe.swift in Sources */,
 				91B9E4503C17032B31E795461B2C419C /* ThirdPartLogin-dummy.m in Sources */,
+				CEC1BFF12B47B136004E7174 /* ReplaceMe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
