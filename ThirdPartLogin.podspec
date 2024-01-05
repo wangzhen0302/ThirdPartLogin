@@ -30,7 +30,19 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '10.0'
 
-  s.source_files = 'ThirdPartLogin/Classes/**/*'
+#  s.source_files = 'ThirdPartLogin/Classes/**/*'
+  
+  s.subspec 'FaceBook' do |n|
+      c.source_files = 'ThirdPartLogin/Classes/QQ/**/*'
+  end
+  
+  s.subspec 'Google' do |n|
+      c.source_files = 'ThirdPartLogin/Classes/QQ/**/*'
+  end
+  
+  s.subspec 'Apple' do |n|
+      c.source_files = 'ThirdPartLogin/Classes/QQ/**/*'
+  end
   
   # s.resource_bundles = {
   #   'ThirdPartLogin' => ['ThirdPartLogin/Assets/*.png']

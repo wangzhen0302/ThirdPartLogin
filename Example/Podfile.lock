@@ -1,0 +1,16 @@
+PODS:
+  - ThirdPartLogin (0.1.0)
+
+DEPENDENCIES:
+  - ThirdPartLogin (from `../`)
+
+EXTERNAL SOURCES:
+  ThirdPartLogin:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ThirdPartLogin: 86813007bb74cae5744c4f03360a3abfbb800f3e
+
+PODFILE CHECKSUM: 78aa91f921a74fa475b061cb15925c736f03146c
+
+COCOAPODS: 1.11.2

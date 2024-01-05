@@ -1,0 +1,6 @@
+framework module Pods_ThirdPartLogin_Tests {
+  umbrella header "Pods-ThirdPartLogin_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
