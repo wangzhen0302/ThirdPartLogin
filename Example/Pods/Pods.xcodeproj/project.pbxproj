@@ -18,7 +18,6 @@
 		CEC1BFFC2B47B532004E7174 /* Apple.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC1BFFB2B47B532004E7174 /* Apple.swift */; };
 		CEC1BFFE2B47B539004E7174 /* Facebook.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC1BFFD2B47B539004E7174 /* Facebook.swift */; };
 		CEC1C0002B47B541004E7174 /* Google.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC1BFFF2B47B541004E7174 /* Google.swift */; };
-		CEC1C0022B47CFC3004E7174 /* WeChat3d492d2e053ad0d855bd0dd4fde22fe1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CEC1C0012B47CFC3004E7174 /* WeChat3d492d2e053ad0d855bd0dd4fde22fe1.jpg */; };
 		E04EB1D9EA152B50B55EE3D7E481F676 /* ThirdPartLogin-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E92787748F27F3AE4C657EB3F107D94 /* ThirdPartLogin-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -71,7 +70,6 @@
 		CEC1BFFB2B47B532004E7174 /* Apple.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Apple.swift; sourceTree = "<group>"; };
 		CEC1BFFD2B47B539004E7174 /* Facebook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Facebook.swift; sourceTree = "<group>"; };
 		CEC1BFFF2B47B541004E7174 /* Google.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Google.swift; sourceTree = "<group>"; };
-		CEC1C0012B47CFC3004E7174 /* WeChat3d492d2e053ad0d855bd0dd4fde22fe1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = WeChat3d492d2e053ad0d855bd0dd4fde22fe1.jpg; path = ThirdPartLogin/Assets/WeChat3d492d2e053ad0d855bd0dd4fde22fe1.jpg; sourceTree = "<group>"; };
 		E5F63E3E2A3FA7270B92912F12C8ABCD /* Pods-ThirdPartLogin_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ThirdPartLogin_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		EAE93C76E8FA466DD4255F3615126225 /* Pods-ThirdPartLogin_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-ThirdPartLogin_Example"; path = Pods_ThirdPartLogin_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC20C8592C04EC0B42883B885B35B51E /* Pods-ThirdPartLogin_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ThirdPartLogin_Tests.modulemap"; sourceTree = "<group>"; };
@@ -124,7 +122,6 @@
 		07F4A92894862D78BD25272DAC17CDDE /* ThirdPartLogin */ = {
 			isa = PBXGroup;
 			children = (
-				CEC1C0012B47CFC3004E7174 /* WeChat3d492d2e053ad0d855bd0dd4fde22fe1.jpg */,
 				CEC1BFF42B47B4D0004E7174 /* Apple */,
 				CEC1BFF22B47B4D0004E7174 /* FaceBook */,
 				CEC1BFF62B47B4D0004E7174 /* Google */,
@@ -391,7 +388,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEC1C0022B47CFC3004E7174 /* WeChat3d492d2e053ad0d855bd0dd4fde22fe1.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
