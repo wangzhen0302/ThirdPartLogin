@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ThirdPartLogin'
-  s.version          = '0.1.32'
+  s.version          = '0.1.33'
   s.summary          = 'iOS developer tools'
 
 # This description is used to generate tags and improve search results.
@@ -49,6 +49,7 @@ TODO: Add long description of the pod here.
 #  s.source_files = 'ThirdPartLogin/Classes/*'
   
   s.subspec 'Apple' do |apple|
+      apple.dependency 'ThirdPartLogin/Core'
       apple.source_files = 'ThirdPartLogin/Classes/Apple/**/*'
   end
   
