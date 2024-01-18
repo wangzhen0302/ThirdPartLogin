@@ -6,130 +6,283 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		10C5885FCB0908EF785774EE52473DAB /* FBSDKLoginKit */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 8885670F798074F4A766B57146A7D626 /* Build configuration list for PBXAggregateTarget "FBSDKLoginKit" */;
+			buildPhases = (
+				1118620A9E400FB886667328AE32A811 /* [CP] Copy XCFrameworks */,
+			);
+			dependencies = (
+				266957F36AA83A1D825D61D7BAA13BE7 /* PBXTargetDependency */,
+			);
+			name = FBSDKLoginKit;
+			productName = FBSDKLoginKit;
+		};
+		28907903AF6DD0AD321D92CD660E7E23 /* FBSDKCoreKit */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 11D9487731458D3FE02E6D5F5E66E137 /* Build configuration list for PBXAggregateTarget "FBSDKCoreKit" */;
+			buildPhases = (
+				7C97F5E02E329B23B8F1D9FAC4AD1E04 /* [CP] Copy XCFrameworks */,
+			);
+			dependencies = (
+				3D3033C058593BFE6FC0988E68523D7A /* PBXTargetDependency */,
+				38BA554C52E1B547C2EF7B3658CA0EF0 /* PBXTargetDependency */,
+			);
+			name = FBSDKCoreKit;
+			productName = FBSDKCoreKit;
+		};
+		479BDBD165CD08E2159181E58CD2078F /* FBAEMKit */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 4F4ED29260484D56521110D3D3884A9A /* Build configuration list for PBXAggregateTarget "FBAEMKit" */;
+			buildPhases = (
+				66DA16605596443B10A358FDD0EC8558 /* [CP] Copy XCFrameworks */,
+			);
+			dependencies = (
+				780EF4130DDC8BE01BDFC85517993001 /* PBXTargetDependency */,
+			);
+			name = FBAEMKit;
+			productName = FBAEMKit;
+		};
+		8EA62FEAB23070050EFD4D4508D659E5 /* FBSDKCoreKit_Basics */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 9600786DDBF2D138AA812215DB6A4F17 /* Build configuration list for PBXAggregateTarget "FBSDKCoreKit_Basics" */;
+			buildPhases = (
+				FD24918A6A3C8E64BAF6D27AB9BA4441 /* [CP] Copy XCFrameworks */,
+			);
+			dependencies = (
+			);
+			name = FBSDKCoreKit_Basics;
+			productName = FBSDKCoreKit_Basics;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
-		22D13E5C6A6E85AA6C8343AC4DE7157F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		304E8A32EAB24716D28F6DE30A43718C /* Pods-ThirdPartLogin_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BD648B5B367BABA6B626D63C45466F /* Pods-ThirdPartLogin_Tests-dummy.m */; };
-		53C886C8E16ECE74DBFCAF23FDE34520 /* Pods-ThirdPartLogin_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A933E0434BD6894045D43334078F0A52 /* Pods-ThirdPartLogin_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		69E50AED37E4530CC23192D5B918195E /* Pods-ThirdPartLogin_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BF55169DB0240C06FDDFEA6C58F33CA2 /* Pods-ThirdPartLogin_Example-dummy.m */; };
-		91B9E4503C17032B31E795461B2C419C /* ThirdPartLogin-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0964FDA7D471FBA5B98EAFCEA4E275D7 /* ThirdPartLogin-dummy.m */; };
-		9C8ED70461C0EE0E0604AF090E97D30A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		ABE3829CAD0D7782ECD0C0DDF0C80BC1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		CC8A4367F6E73ADA5E49CD2FA4FA7495 /* Pods-ThirdPartLogin_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4814966EC194EE24BA54A7CC02289CFD /* Pods-ThirdPartLogin_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CEC1BFFC2B47B532004E7174 /* Apple.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC1BFFB2B47B532004E7174 /* Apple.swift */; };
-		CEC1BFFE2B47B539004E7174 /* Facebook.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC1BFFD2B47B539004E7174 /* Facebook.swift */; };
-		CEC1C0002B47B541004E7174 /* Google.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC1BFFF2B47B541004E7174 /* Google.swift */; };
-		E04EB1D9EA152B50B55EE3D7E481F676 /* ThirdPartLogin-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E92787748F27F3AE4C657EB3F107D94 /* ThirdPartLogin-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1CF4DBD4C480E6B6F5BF2F731CE51905 /* ThirdPartLogin-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CBAA02FC56117BA061D36D8FE5889E9 /* ThirdPartLogin-dummy.m */; };
+		20335FA40BFBE9C6D263BBE02B0E7722 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		2D5ACE6189B4E9B23D6E83B1F4037921 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		5C368D8A8CA79FA13CC43A7FC6023AE5 /* Pods-ThirdPartLogin_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 81E54637CD44E4A09079735660797868 /* Pods-ThirdPartLogin_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8981E15E589D954FFB26B92C8CE8A5BB /* Pods-ThirdPartLogin_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DFFAFF884CE41F6FBC390295560811A /* Pods-ThirdPartLogin_Example-dummy.m */; };
+		9820430E2EDAA635B27E923D7FB7BA81 /* Facebook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524484C72C902401845C9F60C70C4318 /* Facebook.swift */; };
+		A4DCEF7FF79D0D132A744D1B9DF51A22 /* ThirdPartLogin-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2ACEB031087166367D7CB484EADB3F44 /* ThirdPartLogin-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CEDBEA522B58C7F3005AADDC /* ThirdPartLoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDBEA512B58C7F3005AADDC /* ThirdPartLoginManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0BC02AB5873CD2D8201C41ACBF4BF27B /* PBXContainerItemProxy */ = {
+		06DC812AB8A178E44389F529D52818E2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 9E62624704189BE944A87D88AF0546F7;
-			remoteInfo = "Pods-ThirdPartLogin_Example";
+			remoteGlobalIDString = 8EA62FEAB23070050EFD4D4508D659E5;
+			remoteInfo = FBSDKCoreKit_Basics;
 		};
-		6CD78FCA43A1C23A55D82A9AA84D6C2C /* PBXContainerItemProxy */ = {
+		35FE8C53F49800101F03D7BDA9610E94 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 28907903AF6DD0AD321D92CD660E7E23;
+			remoteInfo = FBSDKCoreKit;
+		};
+		4C647C17ED984C97D64EE60D50BABCE7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 479BDBD165CD08E2159181E58CD2078F;
+			remoteInfo = FBAEMKit;
+		};
+		626AD057190564E47F1FF2AD13FEF10E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 28907903AF6DD0AD321D92CD660E7E23;
+			remoteInfo = FBSDKCoreKit;
+		};
+		85833A73716B0B68F0E4A2E33470494D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8EA62FEAB23070050EFD4D4508D659E5;
+			remoteInfo = FBSDKCoreKit_Basics;
+		};
+		A303081604A9D4CB7ACC7DF0A91A894D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 3CE06432368F36CC46FA5463068AA518;
 			remoteInfo = ThirdPartLogin;
 		};
+		C8053224AC7ED717A8FAB924A41485BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 28907903AF6DD0AD321D92CD660E7E23;
+			remoteInfo = FBSDKCoreKit;
+		};
+		CE23AAF078FFA839E8C64F6482A2AADA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 10C5885FCB0908EF785774EE52473DAB;
+			remoteInfo = FBSDKLoginKit;
+		};
+		E9E3EEEE9D2F545F037134058358573B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8EA62FEAB23070050EFD4D4508D659E5;
+			remoteInfo = FBSDKCoreKit_Basics;
+		};
+		F3C3F67238B9F1A9C3A0288AE853D578 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 10C5885FCB0908EF785774EE52473DAB;
+			remoteInfo = FBSDKLoginKit;
+		};
+		FE99E202118D442AEEFF1FE497076C13 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 479BDBD165CD08E2159181E58CD2078F;
+			remoteInfo = FBAEMKit;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		08774E0A8CA508A7AFC682AD8B9F8962 /* Pods-ThirdPartLogin_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ThirdPartLogin_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		0964FDA7D471FBA5B98EAFCEA4E275D7 /* ThirdPartLogin-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ThirdPartLogin-dummy.m"; sourceTree = "<group>"; };
-		0F0589FEA4F66A48BE8AA5BDCE76136B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		17CE972237E924905BB3E45AD057439C /* ThirdPartLogin-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ThirdPartLogin-prefix.pch"; sourceTree = "<group>"; };
-		18BD648B5B367BABA6B626D63C45466F /* Pods-ThirdPartLogin_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ThirdPartLogin_Tests-dummy.m"; sourceTree = "<group>"; };
-		195C85EC2B1986C9BBD9BA01978598BE /* Pods-ThirdPartLogin_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ThirdPartLogin_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		1D9C85B2B86088D87933F06DCED2936F /* Pods-ThirdPartLogin_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ThirdPartLogin_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		35466B80D265CBF0A0006FF131D52546 /* Pods-ThirdPartLogin_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ThirdPartLogin_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		3E92787748F27F3AE4C657EB3F107D94 /* ThirdPartLogin-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ThirdPartLogin-umbrella.h"; sourceTree = "<group>"; };
-		419821FF36FF1A56C04947CDCD734900 /* ThirdPartLogin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ThirdPartLogin.debug.xcconfig; sourceTree = "<group>"; };
-		4814966EC194EE24BA54A7CC02289CFD /* Pods-ThirdPartLogin_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ThirdPartLogin_Example-umbrella.h"; sourceTree = "<group>"; };
-		4C6F8A2C1C4F134FEA737AA594B88AD2 /* Pods-ThirdPartLogin_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-ThirdPartLogin_Tests"; path = Pods_ThirdPartLogin_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4E0F3C9AE2EF0D88D1C40563F9C8CE82 /* ThirdPartLogin.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ThirdPartLogin.modulemap; sourceTree = "<group>"; };
-		4E3AD663449A093044361BA4855ACB04 /* ThirdPartLogin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ThirdPartLogin.release.xcconfig; sourceTree = "<group>"; };
-		52E7A3DDE8B0E2CC974286ADFCD1BEDC /* Pods-ThirdPartLogin_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ThirdPartLogin_Example-frameworks.sh"; sourceTree = "<group>"; };
-		611F5C423F3C747B5B3BEFD8FC332F85 /* ThirdPartLogin.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = ThirdPartLogin.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		65DB71294DC32914E95732FB6EDDFEE4 /* Pods-ThirdPartLogin_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ThirdPartLogin_Example.modulemap"; sourceTree = "<group>"; };
-		6D6596BDD002C4F5DE86877AE07DF9ED /* Pods-ThirdPartLogin_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ThirdPartLogin_Example-Info.plist"; sourceTree = "<group>"; };
+		021C119046339CA3FD4779A57310693A /* FBSDKCoreKit.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.xcframework; name = FBSDKCoreKit.xcframework; path = XCFrameworks/FBSDKCoreKit.xcframework; sourceTree = "<group>"; };
+		03DB54D6C6E018A44014308ED558AB17 /* FBAEMKit.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.xcframework; name = FBAEMKit.xcframework; path = XCFrameworks/FBAEMKit.xcframework; sourceTree = "<group>"; };
+		055F35A855A46DE8568050DBDA4F3215 /* FBSDKLoginKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSDKLoginKit.release.xcconfig; sourceTree = "<group>"; };
+		0DFFAFF884CE41F6FBC390295560811A /* Pods-ThirdPartLogin_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ThirdPartLogin_Example-dummy.m"; sourceTree = "<group>"; };
+		10615165BF8B8ADE837807AF685C4C72 /* Pods-ThirdPartLogin_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ThirdPartLogin_Example-Info.plist"; sourceTree = "<group>"; };
+		11743CC85B92E40FD0EE0B56B35D8D44 /* Pods-ThirdPartLogin_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ThirdPartLogin_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1CA85EA1195B62335624D7D97B5F6DC2 /* ThirdPartLogin-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ThirdPartLogin-Info.plist"; sourceTree = "<group>"; };
+		24072D45ECBFFF10571F8DE7E0A29780 /* FBSDKCoreKit_Basics.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSDKCoreKit_Basics.debug.xcconfig; sourceTree = "<group>"; };
+		2ACEB031087166367D7CB484EADB3F44 /* ThirdPartLogin-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ThirdPartLogin-umbrella.h"; sourceTree = "<group>"; };
+		3E8E69D7C40373EB7C9AAA8C31C6561E /* FBSDKCoreKit_Basics.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSDKCoreKit_Basics.release.xcconfig; sourceTree = "<group>"; };
+		524484C72C902401845C9F60C70C4318 /* Facebook.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Facebook.swift; path = ThirdPartLogin/Classes/FaceBook/Facebook.swift; sourceTree = "<group>"; };
+		5334A6446E04B88E01438DAB8E59996B /* Pods-ThirdPartLogin_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ThirdPartLogin_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		56EF0EFC931B00CC98D40430A90194AE /* FBSDKCoreKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSDKCoreKit.debug.xcconfig; sourceTree = "<group>"; };
+		668ACE6C101FE36C48E4468C563F72E6 /* ThirdPartLogin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ThirdPartLogin.release.xcconfig; sourceTree = "<group>"; };
+		6BE5213F5B774A01C96833B6D3087C6D /* FBSDKCoreKit_Basics-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "FBSDKCoreKit_Basics-xcframeworks.sh"; sourceTree = "<group>"; };
+		6F7699BCA1D1B77E3B0A9817956B5FC0 /* ThirdPartLogin-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ThirdPartLogin-prefix.pch"; sourceTree = "<group>"; };
+		7058D0B4E51E4074684D4C3508EAD20D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		83CBD46C86C50C0ABB476E585E35DAEB /* Pods-ThirdPartLogin_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ThirdPartLogin_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		89EE28FF39D0554D65C97F3BF1CA960E /* Pods-ThirdPartLogin_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ThirdPartLogin_Tests-Info.plist"; sourceTree = "<group>"; };
-		97DA1517951AFBC2CADFC1DD64D52CE2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		9C7579AA38CF1B0351830F4BEEDCF6B5 /* ThirdPartLogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ThirdPartLogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		79C697ADBF8542B1F30576F9CEED5EE1 /* ThirdPartLogin.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = ThirdPartLogin.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		7CBAA02FC56117BA061D36D8FE5889E9 /* ThirdPartLogin-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ThirdPartLogin-dummy.m"; sourceTree = "<group>"; };
+		801E164FEC5D4FB901637693081ABF9B /* FBSDKLoginKit-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "FBSDKLoginKit-xcframeworks.sh"; sourceTree = "<group>"; };
+		81E54637CD44E4A09079735660797868 /* Pods-ThirdPartLogin_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ThirdPartLogin_Example-umbrella.h"; sourceTree = "<group>"; };
+		8B3B248ECC4FC7C5D43D3F6DD1B75B36 /* ThirdPartLogin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ThirdPartLogin.debug.xcconfig; sourceTree = "<group>"; };
+		8E4094FE28AAF4B678269385BBAEA0E3 /* Pods-ThirdPartLogin_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ThirdPartLogin_Example.modulemap"; sourceTree = "<group>"; };
+		9C7579AA38CF1B0351830F4BEEDCF6B5 /* ThirdPartLogin */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ThirdPartLogin; path = ThirdPartLogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A933E0434BD6894045D43334078F0A52 /* Pods-ThirdPartLogin_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ThirdPartLogin_Tests-umbrella.h"; sourceTree = "<group>"; };
-		B061112FDCC19A93FE12D983F3680321 /* Pods-ThirdPartLogin_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ThirdPartLogin_Example.release.xcconfig"; sourceTree = "<group>"; };
-		BA45215BE91272B669DCD662601E32CC /* ThirdPartLogin-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ThirdPartLogin-Info.plist"; sourceTree = "<group>"; };
-		BF55169DB0240C06FDDFEA6C58F33CA2 /* Pods-ThirdPartLogin_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ThirdPartLogin_Example-dummy.m"; sourceTree = "<group>"; };
-		CEC1BFFB2B47B532004E7174 /* Apple.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Apple.swift; sourceTree = "<group>"; };
-		CEC1BFFD2B47B539004E7174 /* Facebook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Facebook.swift; sourceTree = "<group>"; };
-		CEC1BFFF2B47B541004E7174 /* Google.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Google.swift; sourceTree = "<group>"; };
-		E5F63E3E2A3FA7270B92912F12C8ABCD /* Pods-ThirdPartLogin_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ThirdPartLogin_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		9EBA1C2B6A3A7F2E1C95D0521D455CFE /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		AC271F4651EE6ECD3590EC600A95B9A9 /* FBAEMKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBAEMKit.release.xcconfig; sourceTree = "<group>"; };
+		AFA210CDA57FBFF5AB1CAC3A2B6D897E /* FBAEMKit-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "FBAEMKit-xcframeworks.sh"; sourceTree = "<group>"; };
+		B2B04390B3049F3A7CBB5D5DC8D2BBB2 /* Pods-ThirdPartLogin_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ThirdPartLogin_Example.release.xcconfig"; sourceTree = "<group>"; };
+		BD89167A35A6A57EA6B1B9B9F3F26032 /* FBSDKLoginKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSDKLoginKit.debug.xcconfig; sourceTree = "<group>"; };
+		C8C6F8D9A91E61295CE1F306C7255804 /* FBSDKCoreKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSDKCoreKit.release.xcconfig; sourceTree = "<group>"; };
+		CEDBEA512B58C7F3005AADDC /* ThirdPartLoginManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ThirdPartLoginManager.swift; path = ThirdPartLogin/Classes/ThirdPartLoginManager.swift; sourceTree = "<group>"; };
+		D2E7697D962BA32517093D8AF288AA77 /* FBSDKCoreKit-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "FBSDKCoreKit-xcframeworks.sh"; sourceTree = "<group>"; };
+		E7B318545F108D862B8F30BBF07138B7 /* FBSDKLoginKit.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.xcframework; name = FBSDKLoginKit.xcframework; path = XCFrameworks/FBSDKLoginKit.xcframework; sourceTree = "<group>"; };
 		EAE93C76E8FA466DD4255F3615126225 /* Pods-ThirdPartLogin_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-ThirdPartLogin_Example"; path = Pods_ThirdPartLogin_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EC20C8592C04EC0B42883B885B35B51E /* Pods-ThirdPartLogin_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ThirdPartLogin_Tests.modulemap"; sourceTree = "<group>"; };
-		F2A234B4072BC4B8A01F6B9861180EF0 /* Pods-ThirdPartLogin_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ThirdPartLogin_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		EC70EC629D3D1E824E5D47E7961853C0 /* FBAEMKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBAEMKit.debug.xcconfig; sourceTree = "<group>"; };
+		ED0AEB81279CA7D5F72D76A1AC69FB4B /* Pods-ThirdPartLogin_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ThirdPartLogin_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		F177008AB91C1C1E4C3442C875ED189A /* ThirdPartLogin.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ThirdPartLogin.modulemap; sourceTree = "<group>"; };
+		F88823B1963281162285C0F5480D46E9 /* Pods-ThirdPartLogin_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ThirdPartLogin_Example-frameworks.sh"; sourceTree = "<group>"; };
+		F99B0F40D87BE2F52589B9B52F134E2B /* FBSDKCoreKit_Basics.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.xcframework; name = FBSDKCoreKit_Basics.xcframework; path = XCFrameworks/FBSDKCoreKit_Basics.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		21A5414FD17335DFE55519E61A9FAF9F /* Frameworks */ = {
+		02031C677FBA820546561B4BD912288B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C8ED70461C0EE0E0604AF090E97D30A /* Foundation.framework in Frameworks */,
+				2D5ACE6189B4E9B23D6E83B1F4037921 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5503E714B39EEAEF6077729152166F79 /* Frameworks */ = {
+		516E489BDD878B41BBA26C56BA6F280A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22D13E5C6A6E85AA6C8343AC4DE7157F /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AB89F72E704450BF208E65B81BE13027 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				ABE3829CAD0D7782ECD0C0DDF0C80BC1 /* Foundation.framework in Frameworks */,
+				20335FA40BFBE9C6D263BBE02B0E7722 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		03604610D3C77518865900EEAEB25696 /* Support Files */ = {
+		09D3C43B690561F0D90D1630485C6E27 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4E0F3C9AE2EF0D88D1C40563F9C8CE82 /* ThirdPartLogin.modulemap */,
-				0964FDA7D471FBA5B98EAFCEA4E275D7 /* ThirdPartLogin-dummy.m */,
-				BA45215BE91272B669DCD662601E32CC /* ThirdPartLogin-Info.plist */,
-				17CE972237E924905BB3E45AD057439C /* ThirdPartLogin-prefix.pch */,
-				3E92787748F27F3AE4C657EB3F107D94 /* ThirdPartLogin-umbrella.h */,
-				419821FF36FF1A56C04947CDCD734900 /* ThirdPartLogin.debug.xcconfig */,
-				4E3AD663449A093044361BA4855ACB04 /* ThirdPartLogin.release.xcconfig */,
+				F99B0F40D87BE2F52589B9B52F134E2B /* FBSDKCoreKit_Basics.xcframework */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/ThirdPartLogin";
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		07F4A92894862D78BD25272DAC17CDDE /* ThirdPartLogin */ = {
+		244E1277BE62D22EEC2BACC7BBB5CA62 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				CEC1BFF42B47B4D0004E7174 /* Apple */,
-				CEC1BFF22B47B4D0004E7174 /* FaceBook */,
-				CEC1BFF62B47B4D0004E7174 /* Google */,
-				603DFB3A41F1BDAF650BD101DF06A1BE /* Pod */,
-				03604610D3C77518865900EEAEB25696 /* Support Files */,
+				801E164FEC5D4FB901637693081ABF9B /* FBSDKLoginKit-xcframeworks.sh */,
+				BD89167A35A6A57EA6B1B9B9F3F26032 /* FBSDKLoginKit.debug.xcconfig */,
+				055F35A855A46DE8568050DBDA4F3215 /* FBSDKLoginKit.release.xcconfig */,
 			);
-			name = ThirdPartLogin;
-			path = ../..;
+			name = "Support Files";
+			path = "../Target Support Files/FBSDKLoginKit";
+			sourceTree = "<group>";
+		};
+		252D987D224D686684520D87AC9CC31F /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				9EBA1C2B6A3A7F2E1C95D0521D455CFE /* LICENSE */,
+				7058D0B4E51E4074684D4C3508EAD20D /* README.md */,
+				79C697ADBF8542B1F30576F9CEED5EE1 /* ThirdPartLogin.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		2C58D0B4869E299587DC419752182C37 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D2E7697D962BA32517093D8AF288AA77 /* FBSDKCoreKit-xcframeworks.sh */,
+				56EF0EFC931B00CC98D40430A90194AE /* FBSDKCoreKit.debug.xcconfig */,
+				C8C6F8D9A91E61295CE1F306C7255804 /* FBSDKCoreKit.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/FBSDKCoreKit";
+			sourceTree = "<group>";
+		};
+		31D2450A99118902708741903B5FE73E /* Pods-ThirdPartLogin_Example */ = {
+			isa = PBXGroup;
+			children = (
+				8E4094FE28AAF4B678269385BBAEA0E3 /* Pods-ThirdPartLogin_Example.modulemap */,
+				11743CC85B92E40FD0EE0B56B35D8D44 /* Pods-ThirdPartLogin_Example-acknowledgements.markdown */,
+				5334A6446E04B88E01438DAB8E59996B /* Pods-ThirdPartLogin_Example-acknowledgements.plist */,
+				0DFFAFF884CE41F6FBC390295560811A /* Pods-ThirdPartLogin_Example-dummy.m */,
+				F88823B1963281162285C0F5480D46E9 /* Pods-ThirdPartLogin_Example-frameworks.sh */,
+				10615165BF8B8ADE837807AF685C4C72 /* Pods-ThirdPartLogin_Example-Info.plist */,
+				81E54637CD44E4A09079735660797868 /* Pods-ThirdPartLogin_Example-umbrella.h */,
+				ED0AEB81279CA7D5F72D76A1AC69FB4B /* Pods-ThirdPartLogin_Example.debug.xcconfig */,
+				B2B04390B3049F3A7CBB5D5DC8D2BBB2 /* Pods-ThirdPartLogin_Example.release.xcconfig */,
+			);
+			name = "Pods-ThirdPartLogin_Example";
+			path = "Target Support Files/Pods-ThirdPartLogin_Example";
+			sourceTree = "<group>";
+		};
+		3AEB5A0D846B0E5B32E1BECB4F05DF12 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E7B318545F108D862B8F30BBF07138B7 /* FBSDKLoginKit.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		515AACE5FDA2730C638402E51DBB6E31 /* FaceBook */ = {
+			isa = PBXGroup;
+			children = (
+				524484C72C902401845C9F60C70C4318 /* Facebook.swift */,
+			);
+			name = FaceBook;
 			sourceTree = "<group>";
 		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
@@ -140,74 +293,98 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		603DFB3A41F1BDAF650BD101DF06A1BE /* Pod */ = {
+		5F251279E7EBFC16DAD82263B660B227 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				97DA1517951AFBC2CADFC1DD64D52CE2 /* LICENSE */,
-				0F0589FEA4F66A48BE8AA5BDCE76136B /* README.md */,
-				611F5C423F3C747B5B3BEFD8FC332F85 /* ThirdPartLogin.podspec */,
+				AFA210CDA57FBFF5AB1CAC3A2B6D897E /* FBAEMKit-xcframeworks.sh */,
+				EC70EC629D3D1E824E5D47E7961853C0 /* FBAEMKit.debug.xcconfig */,
+				AC271F4651EE6ECD3590EC600A95B9A9 /* FBAEMKit.release.xcconfig */,
 			);
-			name = Pod;
+			name = "Support Files";
+			path = "../Target Support Files/FBAEMKit";
 			sourceTree = "<group>";
 		};
-		89039A3B82D557B58C6527ADC0904348 /* Pods-ThirdPartLogin_Tests */ = {
+		6522947FD2DD8280480533385C92A4CF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EC20C8592C04EC0B42883B885B35B51E /* Pods-ThirdPartLogin_Tests.modulemap */,
-				35466B80D265CBF0A0006FF131D52546 /* Pods-ThirdPartLogin_Tests-acknowledgements.markdown */,
-				195C85EC2B1986C9BBD9BA01978598BE /* Pods-ThirdPartLogin_Tests-acknowledgements.plist */,
-				18BD648B5B367BABA6B626D63C45466F /* Pods-ThirdPartLogin_Tests-dummy.m */,
-				89EE28FF39D0554D65C97F3BF1CA960E /* Pods-ThirdPartLogin_Tests-Info.plist */,
-				A933E0434BD6894045D43334078F0A52 /* Pods-ThirdPartLogin_Tests-umbrella.h */,
-				1D9C85B2B86088D87933F06DCED2936F /* Pods-ThirdPartLogin_Tests.debug.xcconfig */,
-				08774E0A8CA508A7AFC682AD8B9F8962 /* Pods-ThirdPartLogin_Tests.release.xcconfig */,
+				EAE93C76E8FA466DD4255F3615126225 /* Pods-ThirdPartLogin_Example */,
+				9C7579AA38CF1B0351830F4BEEDCF6B5 /* ThirdPartLogin */,
 			);
-			name = "Pods-ThirdPartLogin_Tests";
-			path = "Target Support Files/Pods-ThirdPartLogin_Tests";
+			name = Products;
 			sourceTree = "<group>";
 		};
-		924BA492F1C922C4A538469ACBF6B66E /* Pods-ThirdPartLogin_Example */ = {
+		6D4448CE022842FFC47BDD61F8CE2E50 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				65DB71294DC32914E95732FB6EDDFEE4 /* Pods-ThirdPartLogin_Example.modulemap */,
-				F2A234B4072BC4B8A01F6B9861180EF0 /* Pods-ThirdPartLogin_Example-acknowledgements.markdown */,
-				83CBD46C86C50C0ABB476E585E35DAEB /* Pods-ThirdPartLogin_Example-acknowledgements.plist */,
-				BF55169DB0240C06FDDFEA6C58F33CA2 /* Pods-ThirdPartLogin_Example-dummy.m */,
-				52E7A3DDE8B0E2CC974286ADFCD1BEDC /* Pods-ThirdPartLogin_Example-frameworks.sh */,
-				6D6596BDD002C4F5DE86877AE07DF9ED /* Pods-ThirdPartLogin_Example-Info.plist */,
-				4814966EC194EE24BA54A7CC02289CFD /* Pods-ThirdPartLogin_Example-umbrella.h */,
-				E5F63E3E2A3FA7270B92912F12C8ABCD /* Pods-ThirdPartLogin_Example.debug.xcconfig */,
-				B061112FDCC19A93FE12D983F3680321 /* Pods-ThirdPartLogin_Example.release.xcconfig */,
+				021C119046339CA3FD4779A57310693A /* FBSDKCoreKit.xcframework */,
 			);
-			name = "Pods-ThirdPartLogin_Example";
-			path = "Target Support Files/Pods-ThirdPartLogin_Example";
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		CEC1BFF22B47B4D0004E7174 /* FaceBook */ = {
+		6DD9324788C70DE6E1D2F553E03E7D30 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				CEC1BFFD2B47B539004E7174 /* Facebook.swift */,
+				6BE5213F5B774A01C96833B6D3087C6D /* FBSDKCoreKit_Basics-xcframeworks.sh */,
+				24072D45ECBFFF10571F8DE7E0A29780 /* FBSDKCoreKit_Basics.debug.xcconfig */,
+				3E8E69D7C40373EB7C9AAA8C31C6561E /* FBSDKCoreKit_Basics.release.xcconfig */,
 			);
-			name = FaceBook;
-			path = ThirdPartLogin/Classes/FaceBook;
+			name = "Support Files";
+			path = "../Target Support Files/FBSDKCoreKit_Basics";
 			sourceTree = "<group>";
 		};
-		CEC1BFF42B47B4D0004E7174 /* Apple */ = {
+		6EFF06F1DE73719B91625F927415BEF5 /* ThirdPartLogin */ = {
 			isa = PBXGroup;
 			children = (
-				CEC1BFFB2B47B532004E7174 /* Apple.swift */,
+				CEDBEA512B58C7F3005AADDC /* ThirdPartLoginManager.swift */,
+				515AACE5FDA2730C638402E51DBB6E31 /* FaceBook */,
+				252D987D224D686684520D87AC9CC31F /* Pod */,
+				FD9E19A9AE76A86494B080EC7220F662 /* Support Files */,
 			);
-			name = Apple;
-			path = ThirdPartLogin/Classes/Apple;
+			name = ThirdPartLogin;
+			path = ../..;
 			sourceTree = "<group>";
 		};
-		CEC1BFF62B47B4D0004E7174 /* Google */ = {
+		6F61346BD432118ABE3FC9922D808BFB /* FBSDKLoginKit */ = {
 			isa = PBXGroup;
 			children = (
-				CEC1BFFF2B47B541004E7174 /* Google.swift */,
+				3AEB5A0D846B0E5B32E1BECB4F05DF12 /* Frameworks */,
+				244E1277BE62D22EEC2BACC7BBB5CA62 /* Support Files */,
 			);
-			name = Google;
-			path = ThirdPartLogin/Classes/Google;
+			path = FBSDKLoginKit;
+			sourceTree = "<group>";
+		};
+		814C3CD18595E5934C62057FEF5AC3D1 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				31D2450A99118902708741903B5FE73E /* Pods-ThirdPartLogin_Example */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		B244ACAFADCAA2004439D0342D3E5603 /* FBSDKCoreKit_Basics */ = {
+			isa = PBXGroup;
+			children = (
+				09D3C43B690561F0D90D1630485C6E27 /* Frameworks */,
+				6DD9324788C70DE6E1D2F553E03E7D30 /* Support Files */,
+			);
+			path = FBSDKCoreKit_Basics;
+			sourceTree = "<group>";
+		};
+		BAF55A8CB508B9869BC21897687EC403 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				03DB54D6C6E018A44014308ED558AB17 /* FBAEMKit.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CC2DD7D7FCD91DCCD84F4928A5128B38 /* FBSDKCoreKit */ = {
+			isa = PBXGroup;
+			children = (
+				6D4448CE022842FFC47BDD61F8CE2E50 /* Frameworks */,
+				2C58D0B4869E299587DC419752182C37 /* Support Files */,
+			);
+			path = FBSDKCoreKit;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -216,8 +393,9 @@
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				F5AAD095A9138D5D679905E91A2F054B /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				F6ACB5A7EAC45D252E25DAF27E6DB337 /* Products */,
-				E7E426636A92A8B07594B393ABF0FEE6 /* Targets Support Files */,
+				FA9D709ADCFE9F2286C39E4049A18205 /* Pods */,
+				6522947FD2DD8280480533385C92A4CF /* Products */,
+				814C3CD18595E5934C62057FEF5AC3D1 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -229,57 +407,65 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		E7E426636A92A8B07594B393ABF0FEE6 /* Targets Support Files */ = {
+		E8D635C0E36113A84379F9823F5AFE87 /* FBAEMKit */ = {
 			isa = PBXGroup;
 			children = (
-				924BA492F1C922C4A538469ACBF6B66E /* Pods-ThirdPartLogin_Example */,
-				89039A3B82D557B58C6527ADC0904348 /* Pods-ThirdPartLogin_Tests */,
+				BAF55A8CB508B9869BC21897687EC403 /* Frameworks */,
+				5F251279E7EBFC16DAD82263B660B227 /* Support Files */,
 			);
-			name = "Targets Support Files";
+			path = FBAEMKit;
 			sourceTree = "<group>";
 		};
 		F5AAD095A9138D5D679905E91A2F054B /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				07F4A92894862D78BD25272DAC17CDDE /* ThirdPartLogin */,
+				6EFF06F1DE73719B91625F927415BEF5 /* ThirdPartLogin */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		F6ACB5A7EAC45D252E25DAF27E6DB337 /* Products */ = {
+		FA9D709ADCFE9F2286C39E4049A18205 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				EAE93C76E8FA466DD4255F3615126225 /* Pods-ThirdPartLogin_Example */,
-				4C6F8A2C1C4F134FEA737AA594B88AD2 /* Pods-ThirdPartLogin_Tests */,
-				9C7579AA38CF1B0351830F4BEEDCF6B5 /* ThirdPartLogin.framework */,
+				E8D635C0E36113A84379F9823F5AFE87 /* FBAEMKit */,
+				CC2DD7D7FCD91DCCD84F4928A5128B38 /* FBSDKCoreKit */,
+				B244ACAFADCAA2004439D0342D3E5603 /* FBSDKCoreKit_Basics */,
+				6F61346BD432118ABE3FC9922D808BFB /* FBSDKLoginKit */,
 			);
-			name = Products;
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FD9E19A9AE76A86494B080EC7220F662 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F177008AB91C1C1E4C3442C875ED189A /* ThirdPartLogin.modulemap */,
+				7CBAA02FC56117BA061D36D8FE5889E9 /* ThirdPartLogin-dummy.m */,
+				1CA85EA1195B62335624D7D97B5F6DC2 /* ThirdPartLogin-Info.plist */,
+				6F7699BCA1D1B77E3B0A9817956B5FC0 /* ThirdPartLogin-prefix.pch */,
+				2ACEB031087166367D7CB484EADB3F44 /* ThirdPartLogin-umbrella.h */,
+				8B3B248ECC4FC7C5D43D3F6DD1B75B36 /* ThirdPartLogin.debug.xcconfig */,
+				668ACE6C101FE36C48E4468C563F72E6 /* ThirdPartLogin.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/ThirdPartLogin";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		7FA52DDBAA8A170DBD8DCD796C11464E /* Headers */ = {
+		440930322B450E459A74D12058C76F1D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				53C886C8E16ECE74DBFCAF23FDE34520 /* Pods-ThirdPartLogin_Tests-umbrella.h in Headers */,
+				5C368D8A8CA79FA13CC43A7FC6023AE5 /* Pods-ThirdPartLogin_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AEDAC9CB721EBD2DF7387653C27E7B27 /* Headers */ = {
+		BB3E2F8447756A8B849F70EC33541F48 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E04EB1D9EA152B50B55EE3D7E481F676 /* ThirdPartLogin-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F0603906D52B3C693D022E4432057914 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CC8A4367F6E73ADA5E49CD2FA4FA7495 /* Pods-ThirdPartLogin_Example-umbrella.h in Headers */,
+				A4DCEF7FF79D0D132A744D1B9DF51A22 /* ThirdPartLogin-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,58 +474,45 @@
 /* Begin PBXNativeTarget section */
 		3CE06432368F36CC46FA5463068AA518 /* ThirdPartLogin */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AF54EFAECF85F61E73A8B7E2B4F7428C /* Build configuration list for PBXNativeTarget "ThirdPartLogin" */;
+			buildConfigurationList = F17691279836D6D1322E5A25100B8282 /* Build configuration list for PBXNativeTarget "ThirdPartLogin" */;
 			buildPhases = (
-				AEDAC9CB721EBD2DF7387653C27E7B27 /* Headers */,
-				348E302EF1D801BAA172483CE751BAAA /* Sources */,
-				5503E714B39EEAEF6077729152166F79 /* Frameworks */,
-				EC7626412480DAB56900759391102763 /* Resources */,
+				BB3E2F8447756A8B849F70EC33541F48 /* Headers */,
+				16CC6013808B446A083781D8DC040814 /* Sources */,
+				516E489BDD878B41BBA26C56BA6F280A /* Frameworks */,
+				46851F1BEB5E1E882451307B0E728081 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				8DF207C1B50EEE3222139B9094C1C93C /* PBXTargetDependency */,
+				9152A1E3DD82D228D2FD29EE97239A2B /* PBXTargetDependency */,
 			);
 			name = ThirdPartLogin;
 			productName = ThirdPartLogin;
-			productReference = 9C7579AA38CF1B0351830F4BEEDCF6B5 /* ThirdPartLogin.framework */;
+			productReference = 9C7579AA38CF1B0351830F4BEEDCF6B5 /* ThirdPartLogin */;
 			productType = "com.apple.product-type.framework";
 		};
 		9E62624704189BE944A87D88AF0546F7 /* Pods-ThirdPartLogin_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BBDBD95423D9623564541EE7B359FACF /* Build configuration list for PBXNativeTarget "Pods-ThirdPartLogin_Example" */;
+			buildConfigurationList = 3731E7D5809597E9E225F9B89D9D7AA4 /* Build configuration list for PBXNativeTarget "Pods-ThirdPartLogin_Example" */;
 			buildPhases = (
-				F0603906D52B3C693D022E4432057914 /* Headers */,
-				05D6834478A474A53C29EAA17432D26D /* Sources */,
-				AB89F72E704450BF208E65B81BE13027 /* Frameworks */,
-				012F041FF5D1366FD1501AAB9FCD3F6F /* Resources */,
+				440930322B450E459A74D12058C76F1D /* Headers */,
+				B118285105EF4185FEC50D0C6EF4E6B9 /* Sources */,
+				02031C677FBA820546561B4BD912288B /* Frameworks */,
+				A3F7998D80A1CECE92ABE7DDD4D1596B /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				E6F85D34798DE79047FFC53E06C02FB0 /* PBXTargetDependency */,
+				C131ACF9BCB1A959FA5BC250F62F5517 /* PBXTargetDependency */,
+				386EAE8EC40F224BD3CCB1C47BC0D016 /* PBXTargetDependency */,
+				0A2C0618BBDC9D7544CAD943CC353828 /* PBXTargetDependency */,
+				EFCB33FF382DCBB0E20C5584BDABB9A3 /* PBXTargetDependency */,
+				2777F01360CFB037946E329130DE5F17 /* PBXTargetDependency */,
 			);
 			name = "Pods-ThirdPartLogin_Example";
 			productName = Pods_ThirdPartLogin_Example;
 			productReference = EAE93C76E8FA466DD4255F3615126225 /* Pods-ThirdPartLogin_Example */;
-			productType = "com.apple.product-type.framework";
-		};
-		E9BB6E9E00F3DD53E90ED9598BAB502D /* Pods-ThirdPartLogin_Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5E448BEED46D1296EEFD07E0DEDE16B0 /* Build configuration list for PBXNativeTarget "Pods-ThirdPartLogin_Tests" */;
-			buildPhases = (
-				7FA52DDBAA8A170DBD8DCD796C11464E /* Headers */,
-				EB156966F9C9F962DA3F17743B3DDFDD /* Sources */,
-				21A5414FD17335DFE55519E61A9FAF9F /* Frameworks */,
-				F7398120782F39B54413E50CAB18DFC8 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				FF2FF834578E8E7BA32A9D618899B61A /* PBXTargetDependency */,
-			);
-			name = "Pods-ThirdPartLogin_Tests";
-			productName = Pods_ThirdPartLogin_Tests;
-			productReference = 4C6F8A2C1C4F134FEA737AA594B88AD2 /* Pods-ThirdPartLogin_Tests */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -350,11 +523,6 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1240;
-				TargetAttributes = {
-					3CE06432368F36CC46FA5463068AA518 = {
-						LastSwiftMigration = 1500;
-					};
-				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -365,33 +533,29 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = F6ACB5A7EAC45D252E25DAF27E6DB337 /* Products */;
+			productRefGroup = 6522947FD2DD8280480533385C92A4CF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				479BDBD165CD08E2159181E58CD2078F /* FBAEMKit */,
+				28907903AF6DD0AD321D92CD660E7E23 /* FBSDKCoreKit */,
+				8EA62FEAB23070050EFD4D4508D659E5 /* FBSDKCoreKit_Basics */,
+				10C5885FCB0908EF785774EE52473DAB /* FBSDKLoginKit */,
 				9E62624704189BE944A87D88AF0546F7 /* Pods-ThirdPartLogin_Example */,
-				E9BB6E9E00F3DD53E90ED9598BAB502D /* Pods-ThirdPartLogin_Tests */,
 				3CE06432368F36CC46FA5463068AA518 /* ThirdPartLogin */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		012F041FF5D1366FD1501AAB9FCD3F6F /* Resources */ = {
+		46851F1BEB5E1E882451307B0E728081 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EC7626412480DAB56900759391102763 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F7398120782F39B54413E50CAB18DFC8 /* Resources */ = {
+		A3F7998D80A1CECE92ABE7DDD4D1596B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -400,219 +564,209 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1118620A9E400FB886667328AE32A811 /* [CP] Copy XCFrameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/FBSDKLoginKit/FBSDKLoginKit-xcframeworks.sh",
+				"${PODS_ROOT}/FBSDKLoginKit/XCFrameworks/FBSDKLoginKit.xcframework",
+			);
+			name = "[CP] Copy XCFrameworks";
+			outputPaths = (
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/FBSDKLoginKit/FBSDKLoginKit-xcframeworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		66DA16605596443B10A358FDD0EC8558 /* [CP] Copy XCFrameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/FBAEMKit/FBAEMKit-xcframeworks.sh",
+				"${PODS_ROOT}/FBAEMKit/XCFrameworks/FBAEMKit.xcframework",
+			);
+			name = "[CP] Copy XCFrameworks";
+			outputPaths = (
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FBAEMKit/FBAEMKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/FBAEMKit/FBAEMKit-xcframeworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7C97F5E02E329B23B8F1D9FAC4AD1E04 /* [CP] Copy XCFrameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/FBSDKCoreKit/FBSDKCoreKit-xcframeworks.sh",
+				"${PODS_ROOT}/FBSDKCoreKit/XCFrameworks/FBSDKCoreKit.xcframework",
+			);
+			name = "[CP] Copy XCFrameworks";
+			outputPaths = (
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/FBSDKCoreKit/FBSDKCoreKit-xcframeworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD24918A6A3C8E64BAF6D27AB9BA4441 /* [CP] Copy XCFrameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/FBSDKCoreKit_Basics/FBSDKCoreKit_Basics-xcframeworks.sh",
+				"${PODS_ROOT}/FBSDKCoreKit_Basics/XCFrameworks/FBSDKCoreKit_Basics.xcframework",
+			);
+			name = "[CP] Copy XCFrameworks";
+			outputPaths = (
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FBSDKCoreKit_Basics/FBSDKCoreKit_Basics.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/FBSDKCoreKit_Basics/FBSDKCoreKit_Basics-xcframeworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		05D6834478A474A53C29EAA17432D26D /* Sources */ = {
+		16CC6013808B446A083781D8DC040814 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				69E50AED37E4530CC23192D5B918195E /* Pods-ThirdPartLogin_Example-dummy.m in Sources */,
+				9820430E2EDAA635B27E923D7FB7BA81 /* Facebook.swift in Sources */,
+				CEDBEA522B58C7F3005AADDC /* ThirdPartLoginManager.swift in Sources */,
+				1CF4DBD4C480E6B6F5BF2F731CE51905 /* ThirdPartLogin-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		348E302EF1D801BAA172483CE751BAAA /* Sources */ = {
+		B118285105EF4185FEC50D0C6EF4E6B9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEC1C0002B47B541004E7174 /* Google.swift in Sources */,
-				CEC1BFFC2B47B532004E7174 /* Apple.swift in Sources */,
-				CEC1BFFE2B47B539004E7174 /* Facebook.swift in Sources */,
-				91B9E4503C17032B31E795461B2C419C /* ThirdPartLogin-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EB156966F9C9F962DA3F17743B3DDFDD /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				304E8A32EAB24716D28F6DE30A43718C /* Pods-ThirdPartLogin_Tests-dummy.m in Sources */,
+				8981E15E589D954FFB26B92C8CE8A5BB /* Pods-ThirdPartLogin_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		E6F85D34798DE79047FFC53E06C02FB0 /* PBXTargetDependency */ = {
+		0A2C0618BBDC9D7544CAD943CC353828 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FBSDKCoreKit_Basics;
+			target = 8EA62FEAB23070050EFD4D4508D659E5 /* FBSDKCoreKit_Basics */;
+			targetProxy = 85833A73716B0B68F0E4A2E33470494D /* PBXContainerItemProxy */;
+		};
+		266957F36AA83A1D825D61D7BAA13BE7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FBSDKCoreKit;
+			target = 28907903AF6DD0AD321D92CD660E7E23 /* FBSDKCoreKit */;
+			targetProxy = 35FE8C53F49800101F03D7BDA9610E94 /* PBXContainerItemProxy */;
+		};
+		2777F01360CFB037946E329130DE5F17 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = ThirdPartLogin;
 			target = 3CE06432368F36CC46FA5463068AA518 /* ThirdPartLogin */;
-			targetProxy = 6CD78FCA43A1C23A55D82A9AA84D6C2C /* PBXContainerItemProxy */;
+			targetProxy = A303081604A9D4CB7ACC7DF0A91A894D /* PBXContainerItemProxy */;
 		};
-		FF2FF834578E8E7BA32A9D618899B61A /* PBXTargetDependency */ = {
+		386EAE8EC40F224BD3CCB1C47BC0D016 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "Pods-ThirdPartLogin_Example";
-			target = 9E62624704189BE944A87D88AF0546F7 /* Pods-ThirdPartLogin_Example */;
-			targetProxy = 0BC02AB5873CD2D8201C41ACBF4BF27B /* PBXContainerItemProxy */;
+			name = FBSDKCoreKit;
+			target = 28907903AF6DD0AD321D92CD660E7E23 /* FBSDKCoreKit */;
+			targetProxy = 626AD057190564E47F1FF2AD13FEF10E /* PBXContainerItemProxy */;
+		};
+		38BA554C52E1B547C2EF7B3658CA0EF0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FBSDKCoreKit_Basics;
+			target = 8EA62FEAB23070050EFD4D4508D659E5 /* FBSDKCoreKit_Basics */;
+			targetProxy = E9E3EEEE9D2F545F037134058358573B /* PBXContainerItemProxy */;
+		};
+		3D3033C058593BFE6FC0988E68523D7A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FBAEMKit;
+			target = 479BDBD165CD08E2159181E58CD2078F /* FBAEMKit */;
+			targetProxy = 4C647C17ED984C97D64EE60D50BABCE7 /* PBXContainerItemProxy */;
+		};
+		780EF4130DDC8BE01BDFC85517993001 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FBSDKCoreKit_Basics;
+			target = 8EA62FEAB23070050EFD4D4508D659E5 /* FBSDKCoreKit_Basics */;
+			targetProxy = 06DC812AB8A178E44389F529D52818E2 /* PBXContainerItemProxy */;
+		};
+		8DF207C1B50EEE3222139B9094C1C93C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FBSDKCoreKit;
+			target = 28907903AF6DD0AD321D92CD660E7E23 /* FBSDKCoreKit */;
+			targetProxy = C8053224AC7ED717A8FAB924A41485BF /* PBXContainerItemProxy */;
+		};
+		9152A1E3DD82D228D2FD29EE97239A2B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FBSDKLoginKit;
+			target = 10C5885FCB0908EF785774EE52473DAB /* FBSDKLoginKit */;
+			targetProxy = CE23AAF078FFA839E8C64F6482A2AADA /* PBXContainerItemProxy */;
+		};
+		C131ACF9BCB1A959FA5BC250F62F5517 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FBAEMKit;
+			target = 479BDBD165CD08E2159181E58CD2078F /* FBAEMKit */;
+			targetProxy = FE99E202118D442AEEFF1FE497076C13 /* PBXContainerItemProxy */;
+		};
+		EFCB33FF382DCBB0E20C5584BDABB9A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FBSDKLoginKit;
+			target = 10C5885FCB0908EF785774EE52473DAB /* FBSDKLoginKit */;
+			targetProxy = F3C3F67238B9F1A9C3A0288AE853D578 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		11FEC676BC858A3FDBC4837879010AE2 /* Release */ = {
+		08ABCE9C62AADE11DCDFBE4599066598 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 08774E0A8CA508A7AFC682AD8B9F8962 /* Pods-ThirdPartLogin_Tests.release.xcconfig */;
+			baseConfigurationReference = 055F35A855A46DE8568050DBDA4F3215 /* FBSDKLoginKit.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-ThirdPartLogin_Tests/Pods-ThirdPartLogin_Tests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ThirdPartLogin_Tests/Pods-ThirdPartLogin_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		2AAE0D43AB6D6EB5D00A8A346087BCEA /* Debug */ = {
+		0CABDF108634484D2FA4E7741415972E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E5F63E3E2A3FA7270B92912F12C8ABCD /* Pods-ThirdPartLogin_Example.debug.xcconfig */;
+			baseConfigurationReference = C8C6F8D9A91E61295CE1F306C7255804 /* FBSDKCoreKit.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-ThirdPartLogin_Example/Pods-ThirdPartLogin_Example-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ThirdPartLogin_Example/Pods-ThirdPartLogin_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		7EE7A78859F657F6BEFC651185B43192 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 5.0;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
-		};
-		914F384629188D81064754C856EC70D4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B061112FDCC19A93FE12D983F3680321 /* Pods-ThirdPartLogin_Example.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-ThirdPartLogin_Example/Pods-ThirdPartLogin_Example-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ThirdPartLogin_Example/Pods-ThirdPartLogin_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		B1388023A2B96F1BB36CC905C0E26F4E /* Release */ = {
+		30BE3BC5A7C113CDF7059CCA03D3907E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4E3AD663449A093044361BA4855ACB04 /* ThirdPartLogin.release.xcconfig */;
+			baseConfigurationReference = 8B3B248ECC4FC7C5D43D3F6DD1B75B36 /* ThirdPartLogin.debug.xcconfig */;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -625,7 +779,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/ThirdPartLogin/ThirdPartLogin-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/ThirdPartLogin/ThirdPartLogin-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/ThirdPartLogin/ThirdPartLogin.modulemap";
 				PRODUCT_MODULE_NAME = ThirdPartLogin;
@@ -633,19 +787,65 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
+			name = Debug;
+		};
+		6242BFB1BC1089B769648ECFADBC8D87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC70EC629D3D1E824E5D47E7961853C0 /* FBAEMKit.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6CF416D19991C21292CC8B7849DB4448 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56EF0EFC931B00CC98D40430A90194AE /* FBSDKCoreKit.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7181B5EAE6C2D93F632EB6B7224DA6FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E8E69D7C40373EB7C9AAA8C31C6561E /* FBSDKCoreKit_Basics.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
 			name = Release;
 		};
-		D298A01D82366EC5BB0EFB2AD7D03D9C /* Debug */ = {
+		7FA6D8E7264B25C36F60FA160E00FFF2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1D9C85B2B86088D87933F06DCED2936F /* Pods-ThirdPartLogin_Tests.debug.xcconfig */;
+			baseConfigurationReference = ED0AEB81279CA7D5F72D76A1AC69FB4B /* Pods-ThirdPartLogin_Example.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -655,12 +855,12 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-ThirdPartLogin_Tests/Pods-ThirdPartLogin_Tests-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-ThirdPartLogin_Example/Pods-ThirdPartLogin_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ThirdPartLogin_Tests/Pods-ThirdPartLogin_Tests.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-ThirdPartLogin_Example/Pods-ThirdPartLogin_Example.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -674,7 +874,55 @@
 			};
 			name = Debug;
 		};
-		D299434AB35E7FD6F7921C8EF24742FF /* Debug */ = {
+		86C71D8D3889780510B39CE8E72EA656 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 668ACE6C101FE36C48E4468C563F72E6 /* ThirdPartLogin.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ThirdPartLogin/ThirdPartLogin-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ThirdPartLogin/ThirdPartLogin-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ThirdPartLogin/ThirdPartLogin.modulemap";
+				PRODUCT_MODULE_NAME = ThirdPartLogin;
+				PRODUCT_NAME = ThirdPartLogin;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		872B16B29F20E2868AC8120CE7940BC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24072D45ECBFFF10571F8DE7E0A29780 /* FBSDKCoreKit_Basics.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8DE5143C03248BB6CD542DE3963D6F3A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -727,7 +975,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -740,11 +988,89 @@
 			};
 			name = Debug;
 		};
-		D3F1B59DE5D2B9DDA06F612ADDE7601B /* Debug */ = {
+		9A6F9A9C24CC9B0FD2617AEC0BBC4CE8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 419821FF36FF1A56C04947CDCD734900 /* ThirdPartLogin.debug.xcconfig */;
+			baseConfigurationReference = AC271F4651EE6ECD3590EC600A95B9A9 /* FBAEMKit.release.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9E406C6AAF85E580207CD97B0044DEAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		B22A787D42BD347F8EE9CA0FD0F6A75C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2B04390B3049F3A7CBB5D5DC8D2BBB2 /* Pods-ThirdPartLogin_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -754,60 +1080,103 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/ThirdPartLogin/ThirdPartLogin-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ThirdPartLogin/ThirdPartLogin-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-ThirdPartLogin_Example/Pods-ThirdPartLogin_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ThirdPartLogin/ThirdPartLogin.modulemap";
-				PRODUCT_MODULE_NAME = ThirdPartLogin;
-				PRODUCT_NAME = ThirdPartLogin;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ThirdPartLogin_Example/Pods-ThirdPartLogin_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E8EEB01B39A0D6EEA5CA32A52F950FA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD89167A35A6A57EA6B1B9B9F3F26032 /* FBSDKLoginKit.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		11D9487731458D3FE02E6D5F5E66E137 /* Build configuration list for PBXAggregateTarget "FBSDKCoreKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CF416D19991C21292CC8B7849DB4448 /* Debug */,
+				0CABDF108634484D2FA4E7741415972E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3731E7D5809597E9E225F9B89D9D7AA4 /* Build configuration list for PBXNativeTarget "Pods-ThirdPartLogin_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7FA6D8E7264B25C36F60FA160E00FFF2 /* Debug */,
+				B22A787D42BD347F8EE9CA0FD0F6A75C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D299434AB35E7FD6F7921C8EF24742FF /* Debug */,
-				7EE7A78859F657F6BEFC651185B43192 /* Release */,
+				8DE5143C03248BB6CD542DE3963D6F3A /* Debug */,
+				9E406C6AAF85E580207CD97B0044DEAB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5E448BEED46D1296EEFD07E0DEDE16B0 /* Build configuration list for PBXNativeTarget "Pods-ThirdPartLogin_Tests" */ = {
+		4F4ED29260484D56521110D3D3884A9A /* Build configuration list for PBXAggregateTarget "FBAEMKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D298A01D82366EC5BB0EFB2AD7D03D9C /* Debug */,
-				11FEC676BC858A3FDBC4837879010AE2 /* Release */,
+				6242BFB1BC1089B769648ECFADBC8D87 /* Debug */,
+				9A6F9A9C24CC9B0FD2617AEC0BBC4CE8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AF54EFAECF85F61E73A8B7E2B4F7428C /* Build configuration list for PBXNativeTarget "ThirdPartLogin" */ = {
+		8885670F798074F4A766B57146A7D626 /* Build configuration list for PBXAggregateTarget "FBSDKLoginKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D3F1B59DE5D2B9DDA06F612ADDE7601B /* Debug */,
-				B1388023A2B96F1BB36CC905C0E26F4E /* Release */,
+				E8EEB01B39A0D6EEA5CA32A52F950FA3 /* Debug */,
+				08ABCE9C62AADE11DCDFBE4599066598 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BBDBD95423D9623564541EE7B359FACF /* Build configuration list for PBXNativeTarget "Pods-ThirdPartLogin_Example" */ = {
+		9600786DDBF2D138AA812215DB6A4F17 /* Build configuration list for PBXAggregateTarget "FBSDKCoreKit_Basics" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2AAE0D43AB6D6EB5D00A8A346087BCEA /* Debug */,
-				914F384629188D81064754C856EC70D4 /* Release */,
+				872B16B29F20E2868AC8120CE7940BC6 /* Debug */,
+				7181B5EAE6C2D93F632EB6B7224DA6FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F17691279836D6D1322E5A25100B8282 /* Build configuration list for PBXNativeTarget "ThirdPartLogin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30BE3BC5A7C113CDF7059CCA03D3907E /* Debug */,
+				86C71D8D3889780510B39CE8E72EA656 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
