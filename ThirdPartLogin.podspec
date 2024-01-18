@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ThirdPartLogin'
-  s.version          = '0.1.16'
+  s.version          = '0.1.17'
   s.summary          = 'iOS developer tools'
 
 # This description is used to generate tags and improve search results.
@@ -34,12 +34,14 @@ TODO: Add long description of the pod here.
   
   s.subspec 'FaceBook' do |faceBook|
       faceBook.source_files = 'ThirdPartLogin/Classes/Login/FaceBook/**/*'
+      faceBook.dependency 'ThirdPartLogin/Classes/Login/FaceBook/ThirdPartLoginManager'
       faceBook.dependency 'FBSDKCoreKit'
       faceBook.dependency 'FBSDKLoginKit'
   end
   
   s.subspec 'Google' do |google|
       google.source_files = 'ThirdPartLogin/Classes/Login/Google/**/*'
+      google.dependency 'ThirdPartLogin/Classes/Login/Google/ThirdPartLoginManager'
       google.dependency 'GoogleSignIn'
   end
   
