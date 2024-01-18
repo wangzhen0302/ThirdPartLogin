@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ThirdPartLogin'
-  s.version          = '0.1.26'
+  s.version          = '0.1.27'
   s.summary          = 'iOS developer tools'
 
 # This description is used to generate tags and improve search results.
