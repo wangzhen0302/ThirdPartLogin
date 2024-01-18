@@ -1,6 +1,6 @@
 {
   "name": "ThirdPartLogin",
-  "version": "0.1.14",
+  "version": "0.1.24",
   "summary": "iOS developer tools",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/wangzhen0302/ThirdPartLogin",
@@ -13,17 +13,17 @@
   },
   "source": {
     "git": "https://github.com/wangzhen0302/ThirdPartLogin.git",
-    "tag": "0.1.14"
+    "tag": "0.1.24"
   },
   "platforms": {
     "ios": "13.0"
   },
   "swift_versions": "5.0",
-  "source_files": "ThirdPartLogin/Classes/**/*",
+  "source_files": "ThirdPartLogin/Classes/Login/*",
   "subspecs": [
     {
       "name": "FaceBook",
-      "source_files": "ThirdPartLogin/Classes/FaceBook/**/*",
+      "source_files": "ThirdPartLogin/Classes/Login/FaceBook/**/*",
       "dependencies": {
         "FBSDKCoreKit": [
 
@@ -35,7 +35,7 @@
     },
     {
       "name": "Google",
-      "source_files": "ThirdPartLogin/Classes/Google/**/*",
+      "source_files": "ThirdPartLogin/Classes/Login/Google/**/*",
       "dependencies": {
         "GoogleSignIn": [
 
@@ -44,7 +44,7 @@
     },
     {
       "name": "Apple",
-      "source_files": "ThirdPartLogin/Classes/Apple/**/*"
+      "source_files": "ThirdPartLogin/Classes/Login/Apple/**/*"
     }
   ],
   "swift_version": "5.0"

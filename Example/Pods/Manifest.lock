@@ -21,15 +21,15 @@ PODS:
     - AppAuth/Core (~> 1.6)
     - GTMSessionFetcher/Core (< 4.0, >= 1.5)
   - GTMSessionFetcher/Core (3.1.1)
-  - ThirdPartLogin (0.1.14):
-    - ThirdPartLogin/Apple (= 0.1.14)
-    - ThirdPartLogin/FaceBook (= 0.1.14)
-    - ThirdPartLogin/Google (= 0.1.14)
-  - ThirdPartLogin/Apple (0.1.14)
-  - ThirdPartLogin/FaceBook (0.1.14):
+  - ThirdPartLogin (0.1.24):
+    - ThirdPartLogin/Apple (= 0.1.24)
+    - ThirdPartLogin/FaceBook (= 0.1.24)
+    - ThirdPartLogin/Google (= 0.1.24)
+  - ThirdPartLogin/Apple (0.1.24)
+  - ThirdPartLogin/FaceBook (0.1.24):
     - FBSDKCoreKit
     - FBSDKLoginKit
-  - ThirdPartLogin/Google (0.1.14):
+  - ThirdPartLogin/Google (0.1.24):
     - GoogleSignIn
 
 DEPENDENCIES:
@@ -59,7 +59,7 @@ SPEC CHECKSUMS:
   GoogleSignIn: b232380cf495a429b8095d3178a8d5855b42e842
   GTMAppAuth: 99fb010047ba3973b7026e45393f51f27ab965ae
   GTMSessionFetcher: e8647203b65cee28c5f73d0f473d096653945e72
-  ThirdPartLogin: b2923dd35e8f6697258c43c335968d0ca53ea2a2
+  ThirdPartLogin: 83a5f97d23b8d60b650c68f10b5959612a39e86d
 
 PODFILE CHECKSUM: 53e2845bfe8c806deea647c165a15b0d03f6090c
 
