@@ -33,7 +33,7 @@ public class ThirdPartLoginManager: NSObject {
     public var delegate: ThirdPartLoginManagerDelegate?
     public func registerThirdPart(type:ThirdPartType,clientID:String, serverClientID: String) {
         if type == .facebook {
-            self.delegate = WZFaceBookAuthLogin.shared
+//            self.delegate = WZFaceBookAuthLogin.shared
             ThirdPartLoginManager.shared.delegate?.registerFaceBookAuth(clientID: clientID, serverClientID: serverClientID, target: self)
         } else if type == .google {
             ThirdPartLoginManager.shared.delegate?.registerGoogleAuth(clientID: clientID, serverClientID: serverClientID, target: self)

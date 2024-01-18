@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ThirdPartLogin'
-  s.version          = '0.1.29'
+  s.version          = '0.1.30'
   s.summary          = 'iOS developer tools'
 
 # This description is used to generate tags and improve search results.
@@ -42,7 +42,7 @@ TODO: Add long description of the pod here.
 #  end
   
   
-  s.subspec "Base" do |base|
+  s.subspec "Core" do |base|
       base.source_files = 'AIAds/Classes/Core/*'
   end
   
