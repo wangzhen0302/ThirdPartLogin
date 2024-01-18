@@ -34,14 +34,14 @@ TODO: Add long description of the pod here.
   
   s.subspec 'FaceBook' do |faceBook|
       faceBook.source_files = 'ThirdPartLogin/Classes/Login/FaceBook/**/*'
-      faceBook.dependency 'ThirdPartLogin/Classes/Login/FaceBook/ThirdPartLoginManager'
+      faceBook.dependency 'ThirdPartLogin/Classes/Login/ThirdPartLoginManager'
       faceBook.dependency 'FBSDKCoreKit'
       faceBook.dependency 'FBSDKLoginKit'
   end
   
   s.subspec 'Google' do |google|
       google.source_files = 'ThirdPartLogin/Classes/Login/Google/**/*'
-      google.dependency 'ThirdPartLogin/Classes/Login/Google/ThirdPartLoginManager'
+      google.dependency 'ThirdPartLogin/Classes/Login/ThirdPartLoginManager'
       google.dependency 'GoogleSignIn'
   end
   
