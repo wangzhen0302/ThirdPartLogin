@@ -34,9 +34,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func facebookAuth(_ sender: Any) {
-        WZFaceBookAuthLogin.shared.facebookAuth(vc: self) { authInfo in
-            
-        }
+        ThirdPartLoginManager.shared.registerThirdPart(type: .facebook, clientID: "444", serverClientID: "666")
     }
     
     override func didReceiveMemoryWarning() {

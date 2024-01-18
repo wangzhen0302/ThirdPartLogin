@@ -29,10 +29,11 @@ public protocol ThirdPartLoginManagerDelegate {
     func registerGoogleAuth(clientID: String, serverClientID: String,target:NSObject)
 }
 public class ThirdPartLoginManager: NSObject {
-    static let shared = ThirdPartLoginManager()
+    public static let shared = ThirdPartLoginManager()
     public var delegate: ThirdPartLoginManagerDelegate?
-    func registerThirdPart(type:ThirdPartType,clientID:String, serverClientID: String) {
+    public func registerThirdPart(type:ThirdPartType,clientID:String, serverClientID: String) {
         if type == .facebook {
+            self.delegate = WZFaceBookAuthLogin.shared
             ThirdPartLoginManager.shared.delegate?.registerFaceBookAuth(clientID: clientID, serverClientID: serverClientID, target: self)
         } else if type == .google {
             ThirdPartLoginManager.shared.delegate?.registerGoogleAuth(clientID: clientID, serverClientID: serverClientID, target: self)

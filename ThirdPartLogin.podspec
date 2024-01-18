@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ThirdPartLogin'
-  s.version          = '0.1.28'
+  s.version          = '0.1.29'
   s.summary          = 'iOS developer tools'
 
 # This description is used to generate tags and improve search results.
@@ -30,27 +30,43 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '13.0'
   s.swift_version = '5.0'
-  s.source_files = 'ThirdPartLogin/Classes/*'
   
-  s.subspec 'FaceBook' do |faceBook|
-      faceBook.source_files = 'ThirdPartLogin/Classes/FaceBook/**/*'
-#      faceBook.dependency 'ThirdPartLogin'
-      faceBook.dependency 'FBSDKCoreKit'
-      faceBook.dependency 'FBSDKLoginKit'
+#  s.default_subspec = "All"
+#  
+#  #所有广告
+#  s.subspec "All" do |all|
+#      all.dependency 'ThirdPartLogin/Core'
+#      all.dependency 'ThirdPartLogin/Apple'
+#      all.dependency 'ThirdPartLogin/FaceBook'
+#      all.dependency 'ThirdPartLogin/Google'
+#  end
+  
+  
+  s.subspec "Base" do |base|
+      base.source_files = 'AIAds/Classes/Core/*'
   end
   
-  s.subspec 'Google' do |google|
-      google.source_files = 'ThirdPartLogin/Classes/Google/**/*'
-#      google.dependency 'ThirdPartLogin'
-      google.dependency 'GoogleSignIn'
-  end
+#  s.source_files = 'ThirdPartLogin/Classes/*'
   
   s.subspec 'Apple' do |apple|
       apple.source_files = 'ThirdPartLogin/Classes/Apple/**/*'
-#      apple.dependency 'ThirdPartLogin'
   end
   
-  s.dependency 'apple'
+  s.subspec 'FaceBook' do |faceBook|
+      faceBook.dependency 'ThirdPartLogin/Core'
+      faceBook.dependency 'FBSDKCoreKit'
+      faceBook.dependency 'FBSDKLoginKit'
+      faceBook.source_files = 'ThirdPartLogin/Classes/FaceBook/**/*'
+  end
+  
+  s.subspec 'Google' do |google|
+      faceBook.dependency 'ThirdPartLogin/Core'
+      google.dependency 'GoogleSignIn'
+      google.source_files = 'ThirdPartLogin/Classes/Google/**/*'
+  end
+  
+
+  
   
 #   s.resource_bundles = {
 #     'ThirdPartLogin' => ['ThirdPartLogin/Assets/*.png']

@@ -28,7 +28,7 @@ public class WZFaceBookAuthLogin: NSObject {
         manager = LoginManager.init()
     }
     
-    public func facebookAuth(vc: UIViewController, authColsure:@escaping ((_ authInfo:AuthModelInfo?) -> Void)) {
+    public func facebookAuth(vc: UIViewController, authColsure:@escaping ((_ authInfo: AuthModelInfo?) -> Void)) {
         manager?.logOut()
         manager?.logIn(permissions: ["public_profile", "email"], from: vc) { result, error in
             let authModel = AuthModelInfo()
