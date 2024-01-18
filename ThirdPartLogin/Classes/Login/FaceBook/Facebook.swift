@@ -1,13 +1,14 @@
 
 import FBSDKLoginKit
 extension WZFaceBookAuthLogin: ThirdPartLoginManagerDelegate {
-    public func registerGoogleAuth(clientID: String, serverClientID: String) {
+    public func registerFaceBookAuth(clientID: String, serverClientID: String, target: NSObject) {
         WZFaceBookAuthLogin.shared.registerFaceBookSignIn(clientID: clientID, serverClientID: serverClientID)
     }
     
-    public func registerFaceBookAuth(clientID: String, serverClientID: String) {
+    public func registerGoogleAuth(clientID: String, serverClientID: String, target: NSObject) {
         WZFaceBookAuthLogin.shared.registerFaceBookSignIn(clientID: clientID, serverClientID: serverClientID)
     }
+    
 }
 public class WZFaceBookAuthLogin: NSObject {
     public static let shared = WZFaceBookAuthLogin()

@@ -25,18 +25,17 @@ public enum ThirdPartType {
     case facebook
 }
 public protocol ThirdPartLoginManagerDelegate {
-    func registerFaceBookAuth(clientID: String, serverClientID: String)
-    func registerGoogleAuth(clientID: String, serverClientID: String)
+    func registerFaceBookAuth(clientID: String, serverClientID: String,target:NSObject)
+    func registerGoogleAuth(clientID: String, serverClientID: String,target:NSObject)
 }
 public class ThirdPartLoginManager: NSObject {
     static let shared = ThirdPartLoginManager()
     public var delegate: ThirdPartLoginManagerDelegate?
     func registerThirdPart(type:ThirdPartType,clientID:String, serverClientID: String) {
         if type == .facebook {
-            ThirdPartLoginManager.shared.delegate?.registerFaceBookAuth(clientID: clientID, serverClientID: serverClientID)
-            ThirdPartLoginManager.shared.delegate? = WZFaceBookAuthLogin.shared
+            ThirdPartLoginManager.shared.delegate?.registerFaceBookAuth(clientID: clientID, serverClientID: serverClientID, target: self)
         } else if type == .google {
-            ThirdPartLoginManager.shared.delegate?.registerGoogleAuth(clientID: clientID, serverClientID: serverClientID)
+            ThirdPartLoginManager.shared.delegate?.registerGoogleAuth(clientID: clientID, serverClientID: serverClientID, target: self)
         }
     }
 }
