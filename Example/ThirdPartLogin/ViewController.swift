@@ -21,16 +21,16 @@ class ViewController: UIViewController {
     
     
     @IBAction func appleAuth(_ sender: Any) {
-        WZAppleAuthLogin.shared.appleAuth(vc: self) { info in
-            
-        }
+//        WZAppleAuthLogin.shared.appleAuth(vc: self) { info in
+//            
+//        }
     }
     
     @IBAction func googleAuth(_ sender: Any) {
        
-        WZGoogleSignIn.shared.googleAuth(vc: self) { authInfo in
-            
-        }
+//        WZGoogleSignIn.shared.googleAuth(vc: self) { authInfo in
+//            
+//        }
     }
     
     @IBAction func facebookAuth(_ sender: Any) {
