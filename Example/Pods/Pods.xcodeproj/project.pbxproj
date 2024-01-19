@@ -190,8 +190,8 @@
 		CCF47FFB15F39E4ACAF3C9320138B20E /* OIDExternalUserAgentCatalyst.h in Headers */ = {isa = PBXBuildFile; fileRef = 10AA87650C19B65565DE2AC2C4D978A7 /* OIDExternalUserAgentCatalyst.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CD86DADC8B652D9338EA26569F21C002 /* GIDMDMPasscodeState.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B7E4DFB2DACAE69416E5931F26E087F /* GIDMDMPasscodeState.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		CEAD8DA8D7FCBD39A6540E35C3F40F61 /* GIDSignInPreferences.h in Headers */ = {isa = PBXBuildFile; fileRef = 2633AECE2C25A8FE25EBD1AE9FCA1C59 /* GIDSignInPreferences.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		CEDBEA842B592499005AADDC /* ThirdPartLoginManager+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDBEA832B592499005AADDC /* ThirdPartLoginManager+Extension.swift */; };
-		CEDBEA862B5925B8005AADDC /* ThirdPartAuthBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDBEA852B5925B8005AADDC /* ThirdPartAuthBase.swift */; };
+		CEB6B2422B5A5F5000FBFAB8 /* ThirdPartAuthBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB6B2402B5A5F5000FBFAB8 /* ThirdPartAuthBase.swift */; };
+		CEB6B2432B5A5F5000FBFAB8 /* ThirdPartLoginManager+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB6B2412B5A5F5000FBFAB8 /* ThirdPartLoginManager+Extension.swift */; };
 		D08E73CE77698A4EC2EFF175667F92A8 /* OIDEndSessionRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CA603CCE9E3ACE66AAA400AAA485567 /* OIDEndSessionRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D340F603D2D378520C7DF6D1017C5867 /* GTMAppAuthFetcherAuthorization.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B8505723A2B5E9698952BB8CF892020 /* GTMAppAuthFetcherAuthorization.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D38238AFB141BEDED91BC80BBE62B921 /* GIDEMMSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = F3287A881B0BDED4E841D19A3652004F /* GIDEMMSupport.m */; };
@@ -597,8 +597,8 @@
 		CBEB2CC44AAA055DEAC5E2E67BAB81D3 /* FBAEMKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBAEMKit.debug.xcconfig; sourceTree = "<group>"; };
 		CD6ED53AFF4CE8E7139DE2B4DF12DAD7 /* FBAEMKit-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "FBAEMKit-xcframeworks.sh"; sourceTree = "<group>"; };
 		CE03794403489EC4242CE7BDAC9B48AF /* OIDEndSessionResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDEndSessionResponse.m; path = Source/AppAuthCore/OIDEndSessionResponse.m; sourceTree = "<group>"; };
-		CEDBEA832B592499005AADDC /* ThirdPartLoginManager+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ThirdPartLoginManager+Extension.swift"; sourceTree = "<group>"; };
-		CEDBEA852B5925B8005AADDC /* ThirdPartAuthBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdPartAuthBase.swift; sourceTree = "<group>"; };
+		CEB6B2402B5A5F5000FBFAB8 /* ThirdPartAuthBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ThirdPartAuthBase.swift; path = ThirdPartLogin/Classes/Core/ThirdPartAuthBase.swift; sourceTree = "<group>"; };
+		CEB6B2412B5A5F5000FBFAB8 /* ThirdPartLoginManager+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "ThirdPartLoginManager+Extension.swift"; path = "ThirdPartLogin/Classes/Core/ThirdPartLoginManager+Extension.swift"; sourceTree = "<group>"; };
 		D202159EB13CD97FF80B3B47ABDC74B3 /* OIDFieldMapping.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDFieldMapping.h; path = Source/AppAuthCore/OIDFieldMapping.h; sourceTree = "<group>"; };
 		D2A33980223CAA4FAF81B6117B4D7BEF /* GTMOAuth2KeychainCompatibility.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTMOAuth2KeychainCompatibility.m; path = GTMAppAuth/Sources/GTMOAuth2KeychainCompatibility.m; sourceTree = "<group>"; };
 		D2CBA9B3FD7A0F2219B38A774384D7C3 /* OIDRegistrationRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDRegistrationRequest.m; path = Source/AppAuthCore/OIDRegistrationRequest.m; sourceTree = "<group>"; };
@@ -1022,9 +1022,9 @@
 		9C2B25BBD6F776C7ED13AEB2BDBF3200 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				CEB6B2402B5A5F5000FBFAB8 /* ThirdPartAuthBase.swift */,
+				CEB6B2412B5A5F5000FBFAB8 /* ThirdPartLoginManager+Extension.swift */,
 				3144D20C4F0DD02C4493051EED8948BF /* ThirdPartLoginManager.swift */,
-				CEDBEA832B592499005AADDC /* ThirdPartLoginManager+Extension.swift */,
-				CEDBEA852B5925B8005AADDC /* ThirdPartAuthBase.swift */,
 			);
 			name = Core;
 			sourceTree = "<group>";
@@ -1775,13 +1775,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEDBEA842B592499005AADDC /* ThirdPartLoginManager+Extension.swift in Sources */,
-				CEDBEA862B5925B8005AADDC /* ThirdPartAuthBase.swift in Sources */,
 				A904D9F87815006B2894A0E73AAB7269 /* Apple.swift in Sources */,
 				168CBB0CDE8AB0D6C023260A4BEBE5A6 /* Facebook.swift in Sources */,
 				4330A0731CF85FFB8BC750C2AA628267 /* Google.swift in Sources */,
+				CEB6B2422B5A5F5000FBFAB8 /* ThirdPartAuthBase.swift in Sources */,
 				D7E8F53AC9861D83D932119D76FA7D00 /* KeychainItem.swift in Sources */,
 				72996CF7FB879DC16272783097EB33B9 /* ThirdPartLogin-dummy.m in Sources */,
+				CEB6B2432B5A5F5000FBFAB8 /* ThirdPartLoginManager+Extension.swift in Sources */,
 				6D61718A5E97B37E09DA6ECD485E8D69 /* ThirdPartLoginManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
