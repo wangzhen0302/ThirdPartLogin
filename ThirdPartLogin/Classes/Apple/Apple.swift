@@ -1,15 +1,18 @@
 import AuthenticationServices
 
-public class WZAppleAuthLogin: NSObject {
-    public static let shared = WZAppleAuthLogin()
+class WZAppleAuthLogin: ThirdPartAuthBase {
+    //    public static let shared = WZAppleAuthLogin()
     var authColsure: ((_ authInfo:AuthModelInfo?) -> Void)?
     var currentVC: UIViewController?
-    public func appleAuth(vc: UIViewController, authColsure:@escaping ((_ authInfo:AuthModelInfo?) -> Void)) {
+    override func registerThirdPart(clientID:String? = nil, serverClientID: String? = nil) {
+        
+    }
+    override func thirdPartAuth(vc: UIViewController, authColsure:@escaping ((_ authInfo:AuthModelInfo?) -> Void)) {
         self.currentVC = vc
         let appleIDProvider = ASAuthorizationAppleIDProvider()
         let request = appleIDProvider.createRequest()
         request.requestedScopes = [.fullName, .email]
-//        let requests = [ASAuthorizationAppleIDProvider().createRequest(),ASAuthorizationPasswordProvider().createRequest()]
+        //        let requests = [ASAuthorizationAppleIDProvider().createRequest(),ASAuthorizationPasswordProvider().createRequest()]
         let authorizationController = ASAuthorizationController(authorizationRequests: [request])
         authorizationController.delegate = self
         authorizationController.presentationContextProvider = self
@@ -44,6 +47,14 @@ extension WZAppleAuthLogin: ASAuthorizationControllerDelegate, ASAuthorizationCo
             break
             
         }
+    }
+    func authorizationController(controller: ASAuthorizationController, didCompleteWithError error: Error) {
+        let err = error as NSError
+        let authModel = AuthModelInfo()
+        authModel.isSuccess = false
+        authModel.errorCode = err.code
+        authModel.reason = err.localizedDescription
+        self.authColsure?(authModel)
     }
     public override class func cancelPreviousPerformRequests(withTarget aTarget: Any) {
         

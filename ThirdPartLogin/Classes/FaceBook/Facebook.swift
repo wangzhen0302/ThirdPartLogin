@@ -1,22 +1,12 @@
 
 import FBSDKLoginKit
-extension WZFaceBookAuthLogin: ThirdPartLoginManagerDelegate {
-    public func registerFaceBookAuth(clientID: String, serverClientID: String, target: NSObject) {
-        WZFaceBookAuthLogin.shared.registerFaceBookSignIn(clientID: clientID, serverClientID: serverClientID)
-    }
-    
-    public func registerGoogleAuth(clientID: String, serverClientID: String, target: NSObject) {
-        WZFaceBookAuthLogin.shared.registerFaceBookSignIn(clientID: clientID, serverClientID: serverClientID)
-    }
-    
-}
-public class WZFaceBookAuthLogin: NSObject {
-    public static let shared = WZFaceBookAuthLogin()
+
+ class WZFaceBookAuthLogin: ThirdPartAuthBase {
     var manager: LoginManager?
-    public func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) {
+    override func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) {
         ApplicationDelegate.shared.application(application, didFinishLaunchingWithOptions: launchOptions)
     }
-    public func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any?) -> Bool {
+    override func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any?) -> Bool {
        return ApplicationDelegate.shared.application(
             application,
             open: url,
@@ -24,11 +14,10 @@ public class WZFaceBookAuthLogin: NSObject {
             annotation: annotation)
     }
     
-    public func registerFaceBookSignIn(clientID:String, serverClientID: String)  {
+    override func registerThirdPart(clientID:String? = nil, serverClientID: String? = nil) {
         manager = LoginManager.init()
     }
-    
-    public func facebookAuth(vc: UIViewController, authColsure:@escaping ((_ authInfo: AuthModelInfo?) -> Void)) {
+    override func thirdPartAuth(vc: UIViewController, authColsure:@escaping ((_ authInfo: AuthModelInfo?) -> Void)) {
         manager?.logOut()
         manager?.logIn(permissions: ["public_profile", "email"], from: vc) { result, error in
             let authModel = AuthModelInfo()

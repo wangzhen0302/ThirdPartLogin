@@ -21,20 +21,22 @@ class ViewController: UIViewController {
     
     
     @IBAction func appleAuth(_ sender: Any) {
-//        WZAppleAuthLogin.shared.appleAuth(vc: self) { info in
-//            
-//        }
+        ThirdPartLoginManager.shared.thirdPartAuth(type: .apple, vc: self) { info in
+            
+        }
     }
     
     @IBAction func googleAuth(_ sender: Any) {
        
-//        WZGoogleSignIn.shared.googleAuth(vc: self) { authInfo in
-//            
-//        }
+        ThirdPartLoginManager.shared.thirdPartAuth(type: .google, vc: self) { info in
+            
+        }
     }
     
     @IBAction func facebookAuth(_ sender: Any) {
-        ThirdPartLoginManager.shared.registerThirdPart(type: .facebook, clientID: "444", serverClientID: "666")
+        ThirdPartLoginManager.shared.thirdPartAuth(type: .facebook, vc: self) { info in
+            
+        }
     }
     
     override func didReceiveMemoryWarning() {

@@ -16,19 +16,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        WZFaceBookAuthLogin.shared.application(application, didFinishLaunchingWithOptions: launchOptions)
-        WZGoogleSignIn.shared.registerGoogleSignIn(clientID: "", serverClientID: "")
-        WZFaceBookAuthLogin.shared.registerFaceBookSignIn(clientID: "", serverClientID: "")
+        ThirdPartLoginManager.shared.registerThirdPart(type: .apple)
+        ThirdPartLoginManager.shared.registerThirdPart(type: .facebook)
+        let clientID = "933998484905-7sfbm975ci4ho6uu5po0l2u0bg8r5mrl.apps.googleusercontent.com"
+        let serverClientID = "933998484905-d99bcmubi0mck6ih75e47uiln9m8ekr1.apps.googleusercontent.com"
+        ThirdPartLoginManager.shared.registerThirdPart(type: .google, clientID: clientID, serverClientID: serverClientID)
+//        ThirdPartLoginManager.shared.application(application: application, didFinishLaunchingWithOptions: launchOptions)
         
         return true
     }
-    func application(
-        _ app: UIApplication,
-        open url: URL,
-        options: [UIApplication.OpenURLOptionsKey: Any] = [:]
-    ) -> Bool {
-        return WZGoogleSignIn.shared.application(app, open: url, sourceApplication: options[UIApplication.OpenURLOptionsKey.sourceApplication] as? String, annotation: options)
-    }
+//    func application(
+//        _ app: UIApplication,
+//        open url: URL,
+//        options: [UIApplication.OpenURLOptionsKey: Any] = [:]
+//    ) -> Bool {
+//        
+//        if ThirdPartLoginManager.shared.application(application: app, open: url, sourceApplication: options[UIApplication.OpenURLOptionsKey.sourceApplication] as? String, annotation: options) {
+//            return true
+//        }
+//        
+//        return false
+//    }
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.

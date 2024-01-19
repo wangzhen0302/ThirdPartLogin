@@ -27,7 +27,7 @@
 			<string>fb</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>fb751707646865099</string>
+				<string>fb6820024614749337</string>
 			</array>
 		</dict>
 		<dict>
@@ -44,7 +44,7 @@
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>FacebookAppID</key>
-	<string>751707646865099</string>
+	<string>6820024614749337</string>
 	<key>FacebookAppSecret</key>
 	<string>edf90f55438a1894d9aeaef2ed3a5785</string>
 	<key>FacebookAutoLogAppEventsEnabled</key>
