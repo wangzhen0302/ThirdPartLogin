@@ -21,19 +21,19 @@ PODS:
     - AppAuth/Core (~> 1.6)
     - GTMSessionFetcher/Core (< 4.0, >= 1.5)
   - GTMSessionFetcher/Core (3.1.1)
-  - ThirdPartLogin (0.1.33):
-    - ThirdPartLogin/Apple (= 0.1.33)
-    - ThirdPartLogin/Core (= 0.1.33)
-    - ThirdPartLogin/FaceBook (= 0.1.33)
-    - ThirdPartLogin/Google (= 0.1.33)
-  - ThirdPartLogin/Apple (0.1.33):
+  - ThirdPartLogin (1.0.0):
+    - ThirdPartLogin/Apple (= 1.0.0)
+    - ThirdPartLogin/Core (= 1.0.0)
+    - ThirdPartLogin/FaceBook (= 1.0.0)
+    - ThirdPartLogin/Google (= 1.0.0)
+  - ThirdPartLogin/Apple (1.0.0):
     - ThirdPartLogin/Core
-  - ThirdPartLogin/Core (0.1.33)
-  - ThirdPartLogin/FaceBook (0.1.33):
+  - ThirdPartLogin/Core (1.0.0)
+  - ThirdPartLogin/FaceBook (1.0.0):
     - FBSDKCoreKit
     - FBSDKLoginKit
     - ThirdPartLogin/Core
-  - ThirdPartLogin/Google (0.1.33):
+  - ThirdPartLogin/Google (1.0.0):
     - GoogleSignIn
     - ThirdPartLogin/Core
 
@@ -64,8 +64,8 @@ SPEC CHECKSUMS:
   GoogleSignIn: b232380cf495a429b8095d3178a8d5855b42e842
   GTMAppAuth: 99fb010047ba3973b7026e45393f51f27ab965ae
   GTMSessionFetcher: e8647203b65cee28c5f73d0f473d096653945e72
-  ThirdPartLogin: f902fad4405c80614ce94d3014d414e217454773
+  ThirdPartLogin: 54c4b5ca3469fc6553c6bfb4cf2d30da007812f3
 
-PODFILE CHECKSUM: 53e2845bfe8c806deea647c165a15b0d03f6090c
+PODFILE CHECKSUM: ab3f3969f72f6eeca67f7c695936dbe6c06e85ed
 
 COCOAPODS: 1.11.2

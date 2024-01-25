@@ -19,6 +19,9 @@ class WZAppleAuthLogin: ThirdPartAuthBase {
         authorizationController.performRequests()
         self.authColsure = authColsure
     }
+    override func loginOut() {
+        KeychainItem.deleteUserIdentifierFromKeychain()
+    }
 }
 extension WZAppleAuthLogin: ASAuthorizationControllerDelegate, ASAuthorizationControllerPresentationContextProviding {
     public func authorizationController(controller: ASAuthorizationController, didCompleteWithAuthorization authorization: ASAuthorization) {

@@ -73,7 +73,10 @@ public class ThirdPartLoginManager: NSObject {
             authInstance.application(application, didFinishLaunchingWithOptions: launchOptions)
         }
     }
-    
+    public func loginOut(type:ThirdPartType) {
+        guard let instance = self.getThirdPartClassInstance(type: type) else { return }
+        instance.loginOut()
+    }
     func getAdInstance(authType: ThirdPartType) -> AIAdInstance? {
         for item in self.thirdPartInstance {
             if item.authType == authType {

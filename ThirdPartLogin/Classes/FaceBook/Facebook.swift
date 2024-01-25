@@ -35,8 +35,7 @@ import FBSDKLoginKit
             
         }
     }
-    
-    public func facebookLogOut() {
-        manager?.logOut()
-    }
+     override func loginOut() {
+         manager?.logOut()
+     }
 }

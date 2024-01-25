@@ -4,6 +4,6 @@ platform :ios, '13.0'
 
 target 'ThirdPartLogin_Example' do
   pod 'ThirdPartLogin', :path => '../'
-#  pod 'ThirdPartLogin/FaceBook', :path => '../'
+#  pod 'ThirdPartLogin/Apple', :path => '../'
 
 end

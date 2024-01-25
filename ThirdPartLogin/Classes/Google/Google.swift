@@ -45,8 +45,7 @@ class WZGoogleSignIn: ThirdPartAuthBase {
     override func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any?) -> Bool {
        return GIDSignIn.sharedInstance.handle(url)
     }
-    
-    func googleSignOut() {
+    override func loginOut() {
         GIDSignIn.sharedInstance.signOut()
     }
     

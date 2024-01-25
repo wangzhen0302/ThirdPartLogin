@@ -1,6 +1,6 @@
 {
   "name": "ThirdPartLogin",
-  "version": "0.1.33",
+  "version": "1.0.0",
   "summary": "iOS developer tools",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/wangzhen0302/ThirdPartLogin",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/wangzhen0302/ThirdPartLogin.git",
-    "tag": "0.1.33"
+    "tag": "1.0.0"
   },
   "platforms": {
     "ios": "13.0"
